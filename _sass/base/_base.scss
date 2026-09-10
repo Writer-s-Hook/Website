@@ -1,0 +1,145 @@
+@use "variables" as *;
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: $body;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.72;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; }
+
+a { color: var(--accent-ink); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+a:hover { color: var(--accent-deep); }
+
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+
+.skip-link {
+  position: absolute; left: -9999px; top: 0; z-index: 99;
+  background: var(--band); color: var(--band-fg); padding: .6rem 1rem;
+  font-family: $subhead; font-size: .9rem;
+  &:focus { left: 0; }
+}
+
+.container { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+
+// Constrain the reading measure without re-centring the block:
+// sections stay flush with the hero's left edge.
+.measure > *      { max-width: 62ch; }
+.measure-wide > * { max-width: 78ch; }
+
+.eyebrow {
+  font-family: $subhead;
+  font-weight: 700;
+  font-size: .88rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  margin: 0 0 1.1rem;
+}
+
+.label {
+  font-family: $subhead;
+  font-weight: 700;
+  font-size: .82rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+}
+
+.tag {
+  display: inline-block;
+  font-family: $subhead;
+  font-size: .8rem;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--rule);
+  padding: .15rem .5rem;
+  margin-left: .6rem;
+  white-space: nowrap;
+  vertical-align: .12em;
+}
+
+// Subheaders carry every section title.
+.section-title {
+  font-family: $subhead;
+  font-weight: 700;
+  font-size: clamp(1.9rem, 3.6vw, 2.85rem);
+  line-height: 1.18;
+  letter-spacing: -.01em;
+  margin: 0 0 1.9rem;
+  max-width: 20ch;
+  text-wrap: balance;
+}
+.measure-wide .section-title { max-width: 24ch; }
+
+// Buttons -------------------------------------------------------------
+// Both variants read from tokens only, so the same class works on cream
+// and on a band without an "-invert" twin.
+.btn {
+  display: inline-block;
+  font-family: $subhead;
+  font-weight: 700;
+  font-size: .95rem;
+  letter-spacing: .04em;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  border: 2px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-on);
+  &:hover { background: transparent; color: var(--accent-ink); border-color: var(--accent); }
+}
+.btn-ghost {
+  background: transparent;
+  border-color: var(--ink);
+  color: var(--ink);
+  &:hover { background: var(--ink); color: var(--paper); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
+
+// Strips --------------------------------------------------------------
+.strip { padding: 5rem 0; border-top: 1px solid var(--rule); }
+.strip-paper { background: var(--stock); }
+
+.strip-dark {
+  @include on-band;
+  border-top: 1px solid var(--band-edge);
+  border-bottom: 1px solid var(--band-edge);
+}
+
+.prose {
+  font-size: 1.1rem;
+  color: var(--ink-soft);
+  p { margin: 0 0 1.2rem; }
+  h2 {
+    font-family: $subhead; font-weight: 700; color: var(--ink);
+    font-size: 1.85rem; line-height: 1.25; margin: 2.8rem 0 .9rem;
+  }
+  h3 { font-family: $subhead; font-weight: 700; color: var(--ink); font-size: 1.35rem; margin: 1.8rem 0 .5rem; }
+  strong { font-weight: 600; color: var(--ink); }
+  ul { padding-left: 1.15rem; margin: 0 0 1.2rem; }
+  li { margin-bottom: .45rem; }
+}
+// Lead paragraph: the opening line of a teaser or intro reads one step up.
+.prose.lead p:first-child { font-size: 1.3rem; color: var(--ink); line-height: 1.6; }
+
+.table-wrap { overflow-x: auto; }

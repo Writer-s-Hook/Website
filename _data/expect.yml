@@ -1,0 +1,15 @@
+# Canonical source for "how the day is built".
+# Rendered in full on /about/, and as a three-item teaser on the home page.
+# Do not restate these in prose anywhere else — link to /about/ instead.
+- title: "Sprints are the main event"
+  body: "Extended blocks of uninterrupted, focused time to dive into new drafts, push past a stall, and build momentum. The workshops are built around the sprints, not the other way around."
+- title: "Interactive craft workshops"
+  body: "Mini-masterclasses covering world-building, dialogue, narrative pacing, poetry forms, and college essay writing."
+- title: "Mentors are working writers"
+  body: "Published authors, journalists, editors, and university writing mentors sit down with you one-on-one — on your draft, not a sample exercise."
+- title: "Feedback comes before judgment"
+  body: "Read-arounds run on one rule: name what is working before naming what is not. The optional end-of-day showcase is a reading circle, not a ranking."
+- title: "Prizes, swag, and the anthology"
+  body: "Recognition awards across genres, participant gift bags, and the chance to be published in our post-event anthology."
+- title: "Free means free"
+  body: "Admission, materials, food, and swag are covered by our sponsors. Nothing is upsold at the door."

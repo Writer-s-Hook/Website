@@ -1,0 +1,45 @@
+@use "../base/variables" as *;
+
+.site-footer {
+  background: var(--stock);
+  border-top: 1px solid var(--rule);
+  padding: 4rem 0 1.8rem;
+}
+.footer-inner {
+  display: grid; gap: 2.8rem;
+  padding-bottom: 2.8rem;
+}
+@media (min-width: 800px) { .footer-inner { grid-template-columns: 1fr auto; gap: 4rem; } }
+
+.signoff {
+  font-family: $display; font-size: 2.6rem; line-height: 1.18;
+  margin: 0 0 1.6rem; color: var(--ink);
+}
+.footer-contact {
+  margin: 0 0 1.4rem;
+  a { display: inline-block; font-family: $body; font-size: 1rem; padding: .5rem 0; min-height: 44px; }
+  .label { margin-bottom: .1rem; }
+}
+.footer-nav {
+  ul { list-style: none; margin: .4rem 0 0; padding: 0; display: grid; }
+  // Padded to a 44px target rather than spaced with gap, so the whole row is tappable.
+  a { display: block; font-size: 1rem; color: var(--ink-soft); text-decoration: none;
+      padding: .58rem 0; min-height: 44px;
+      &:hover { color: var(--accent-ink); }
+      &[aria-current="page"] { color: var(--ink); text-decoration: underline;
+                               text-underline-offset: .2em; text-decoration-color: var(--accent); } }
+}
+.social {
+  list-style: none; display: flex; gap: .45rem; margin: 0; padding: 0;
+  // The icon SVGs ship as white glyphs, so their chip stays dark.
+  a { display: inline-flex; align-items: center; justify-content: center;
+      width: 44px; height: 44px; background: var(--chip); border: 1px solid var(--chip);
+      &:hover { background: var(--accent-ink); border-color: var(--accent-ink); } }
+  img { width: 19px; height: 19px; display: block; }
+}
+.footer-legal {
+  display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; justify-content: space-between;
+  border-top: 1px solid var(--rule); padding-top: 1.4rem;
+  font-family: $subhead; font-size: .84rem; letter-spacing: .11em;
+  text-transform: uppercase; color: var(--muted);
+}

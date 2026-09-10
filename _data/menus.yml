@@ -1,0 +1,39 @@
+main:
+  - name: "About"
+    url: "/about/"
+    weight: 1
+  - name: "Schedule"
+    url: "/#schedule"
+    weight: 2
+  - name: "Tracks"
+    url: "/#tracks"
+    weight: 3
+  - name: "FAQ"
+    url: "/faq/"
+    weight: 4
+  - name: "Code of Conduct"
+    url: "/conduct/"
+    weight: 5
+  - name: "Support Us"
+    url: "/support/"
+    weight: 6
+
+footer:
+  - name: "About"
+    url: "/about/"
+    weight: 1
+  - name: "Schedule"
+    url: "/#schedule"
+    weight: 2
+  - name: "FAQ"
+    url: "/faq/"
+    weight: 3
+  - name: "Guidelines & Code of Conduct"
+    url: "/conduct/"
+    weight: 4
+  - name: "AI Policy"
+    url: "/ai/"
+    weight: 5
+  - name: "Support Us"
+    url: "/support/"
+    weight: 6

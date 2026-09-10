@@ -1,0 +1,39 @@
+@use "../base/variables" as *;
+
+.hero {
+  position: relative;
+  @include on-band;
+  border-bottom: 1px solid var(--band-edge);
+  padding: 5.5rem 0 5rem;
+  overflow: hidden;
+  // Ruled paper, at night: the lines a draft is written on.
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 2.6rem,
+    var(--band-rule) 2.6rem,
+    var(--band-rule) calc(2.6rem + 1px)
+  );
+}
+.hero-inner { position: relative; }
+
+
+
+.hero-title {
+  font-family: $display;
+  font-weight: 400;
+  font-size: clamp(3.4rem, 11vw, 8rem);
+  line-height: 1.14;      // script ascenders and descenders need the room
+  letter-spacing: .005em;
+  margin: 0 0 1.6rem;
+  text-wrap: balance;
+  em { font-style: normal; color: var(--accent); }
+}
+.hero-dek {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 44ch;
+  margin: 0 0 2.4rem;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: .85rem; }

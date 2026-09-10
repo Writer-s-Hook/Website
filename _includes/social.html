@@ -1,0 +1,5 @@
+<ul class="social">
+  {% for s in site.data.social %}
+  <li><a href="{{ s.link }}" title="{{ s.name }}"><img src="{{ s.image | relative_url }}" width="20" height="20" alt="{{ s.name }}"></a></li>
+  {% endfor %}
+</ul>

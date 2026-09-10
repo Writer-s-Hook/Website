@@ -1,0 +1,101 @@
+// Pen the Script — black grounds, cream paper, blue turquoise accent.
+//
+// Two surface families, each with a complete token set:
+//   PAPER  — the cream page (light) / the near-black page (dark)
+//   BAND   — the inverted panels: header, hero, dark strips, closing call
+//
+// Any element placed on a band gets its tokens rewritten by the `on-band`
+// mixin below, so components never need to know which surface they sit on.
+// Nothing should reference a raw colour outside this file.
+
+:root {
+  // --- paper surface ---
+  --paper:        #F7F2E4;   // cream
+  --stock:        #EFE8D5;   // cream, one step down
+  --ink:          #101012;
+  --ink-soft:     #3B3A37;
+  --muted:        #46443C;   // small type goes muddy as mid-grey; keep it near ink
+  --rule:         #DCD3BC;
+  --rule-soft:    #E7DFCB;
+
+  // --- accent ---
+  --accent:       #6CDAE7;   // blue turquoise
+  --accent-ink:   #17727F;   // same hue, dark enough to read on cream
+  --accent-deep:  #0F5A65;
+  --accent-on:    #101012;   // type placed on an accent fill
+
+  // --- band surface (dark panels) ---
+  --band:          #101012;
+  --band-raised:   #1E1E22;
+  --band-fg:       #F7F2E4;
+  --band-soft:     #E4DFD1;   // solid, not alpha: translucency over black hazes
+  --band-muted:    #F7F2E4;   // full-strength cream, 100% opaque
+  --band-hairline: rgba(247,242,228,.16);
+  --band-rule:     rgba(108,218,231,.20);
+  --band-edge:     transparent;   // bands are self-evident against cream
+
+  --focus:        #17727F;
+  --shadow:       rgba(16,16,18,.10);
+  --chip:         #101012;
+
+  color-scheme: light;
+}
+
+// The dark palette lives in a mixin so it can be applied from both the
+// system-preference query and the explicit toggle without being written twice.
+@mixin dark-tokens {
+  color-scheme: dark;
+
+  // The page goes darkest; bands lift away from it, since in dark mode
+  // contrast has to come from lifting rather than from going blacker.
+  --paper:       #0E0E11;
+  --stock:       #141418;
+  --ink:         #F2ECDC;
+  --ink-soft:    #C6C0B2;
+  --muted:       #F2ECDC;   // full-strength cream, 100% opaque
+  --rule:        #2A2A31;
+  --rule-soft:   #1E1E23;
+
+  --accent:      #6CDAE7;
+  --accent-ink:  #6CDAE7;   // the bright turquoise reads fine on dark paper
+  --accent-deep: #9BE8F1;
+  --accent-on:   #101012;
+
+  --band:        #1A1A21;
+  --band-raised: #26262E;
+  --band-edge:   #2E2E38;   // bands need a defined edge once everything is dark
+
+  --focus:       #6CDAE7;
+  --shadow:      rgba(0,0,0,.45);
+  --chip:        #2A2A30;
+}
+
+// Three states, because "system" stamps no attribute at all:
+//   1. system dark  — the media query, unless the reader has chosen light
+//   2. explicit dark — the toggle, which must also win over a light OS
+// Light needs no extra rule: it is the bare :root above.
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-tokens; }
+}
+:root[data-theme="dark"] { @include dark-tokens; }
+
+// Everything inside a band reads from the band's own token set.
+@mixin on-band {
+  background: var(--band);
+  color: var(--band-fg);
+
+  --paper:     var(--band);
+  --stock:     var(--band-raised);
+  --ink:       var(--band-fg);
+  --ink-soft:  var(--band-soft);
+  --muted:     var(--band-muted);
+  --rule:      var(--band-hairline);
+  --rule-soft: var(--band-hairline);
+  --accent-ink: var(--accent);
+  --chip:      var(--band-raised);
+  --focus:     var(--accent);
+}
+
+$display: "Moon Dance", "Brush Script MT", cursive;            // headers
+$subhead: "Quattrocento", Georgia, "Times New Roman", serif;   // subheaders
+$body:    "Spectral", Georgia, "Times New Roman", serif;       // running text

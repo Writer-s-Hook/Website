@@ -1,0 +1,8 @@
+- name: "Fiction"
+  includes: "Short stories, flash fiction, novel chapters, sci-fi and fantasy, realistic fiction"
+- name: "Creative Nonfiction"
+  includes: "Personal memoir, persuasive essays, cultural journalism"
+- name: "Poetry & Spoken Word"
+  includes: "Free verse, formal poetry, performance pieces"
+- name: "Screenwriting & Playwriting"
+  includes: "Scripts, scene studies, audio drama"

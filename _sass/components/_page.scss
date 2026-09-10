@@ -1,0 +1,54 @@
+@use "../base/variables" as *;
+
+.page-body { padding: 4.5rem 0 6rem; }
+.page-body .container { max-width: 880px; }
+
+.page-title {
+  font-family: $display; font-weight: 400;
+  font-size: clamp(3rem, 7.5vw, 5.4rem);
+  line-height: 1.14; letter-spacing: .005em;
+  margin: 0 0 1.3rem; text-wrap: balance;
+}
+.standfirst {
+  font-size: 1.35rem; line-height: 1.55; color: var(--ink-soft);
+  max-width: 50ch; margin: 0 0 2.8rem;
+  padding-bottom: 2.2rem; border-bottom: 1px solid var(--rule);
+}
+
+.principles {
+  margin: 1.6rem 0 0;
+  > div {
+    padding: 1.3rem 0;
+    border-top: 1px solid var(--rule);
+    &:last-child { border-bottom: 1px solid var(--rule); }
+  }
+  dt { font-family: $subhead; font-weight: 700; color: var(--ink); font-size: 1.2rem; }
+  dd { margin: .3rem 0 0; color: var(--ink-soft); font-size: 1.06rem; }
+}
+
+.doors {
+  display: grid; gap: 1px; background: var(--rule);
+  border: 1px solid var(--rule); margin-top: 1.8rem;
+  > div { background: var(--paper); padding: 1.5rem 1.4rem 1.7rem; }
+  h3 { font-family: $subhead; font-weight: 700; font-size: 1.4rem; margin: .6rem 0 .5rem; color: var(--ink); }
+  p  { margin: 0; font-size: 1rem; color: var(--ink-soft); }
+  .label { color: var(--accent-ink); }
+}
+@media (min-width: 780px) { .doors { grid-template-columns: repeat(3, 1fr); } }
+
+// Policy pages (code of conduct, AI policy) drop the script display face:
+// it is the hardest type on the site to read, and these are the pages people
+// read when something has gone wrong.
+.page-policy {
+  .page-title { font-family: $subhead; font-weight: 700; letter-spacing: -.01em; line-height: 1.2; }
+  .prose li { margin-bottom: .35rem; }
+}
+
+// The reporting route needs to be findable at a glance, not buried in prose.
+.callout {
+  border-left: 4px solid var(--accent-ink);
+  background: var(--stock);
+  padding: 1.2rem 1.4rem;
+  margin: 1.4rem 0 1.6rem;
+  p:last-child { margin-bottom: 0; }
+}

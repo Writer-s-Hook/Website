@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="page-body">
+  <div class="container measure">
+    <p class="eyebrow">{{ page.eyebrow | default: page.title }}</p>
+    <h1 class="page-title">{{ page.headline | default: page.title }}</h1>
+    {% if page.standfirst %}<p class="standfirst">{{ page.standfirst }}</p>{% endif %}
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>

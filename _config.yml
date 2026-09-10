@@ -1,0 +1,51 @@
+title: "Writer's Hook"
+tagline: 'A free one-day creative write-a-thon for high school writers'
+description: >-
+  A free one-day creative write-a-thon for Bay Area high school writers.
+  Drafting sprints, craft workshops, and 1-on-1 mentorship. November 7, 2026.
+email: questions@writershook.org
+# Code of Conduct reporting address. MUST be an inbox a named organizer
+# monitors on the day — see conduct.md.
+conduct_email: questions@writershook.org
+conduct_reviewed: 'July 6th, 2024'
+
+baseurl: ''
+url: ''
+permalink: pretty
+
+event:
+  date: 'Saturday, November 7, 2026'
+  date_short: 'Nov 7, 2026'
+  time: '9:00 AM – 6:00 PM'
+  venue: 'Los Altos Hills Town Hall'
+  venue_address: '26379 Fremont Road, Los Altos Hills, CA'
+  eligibility: 'Grades 9–12, all backgrounds'
+  cost: '100% free — meals, snacks, and prizes included'
+  register_url: '#register'
+  mentor_url: '#register'
+
+logo:
+  mobile: "images/logo/logo-mobile.svg"
+  mobile_height: "32px"
+  mobile_width: "32px"
+  desktop: "images/logo/logo.svg"
+  desktop_height: "44px"
+  desktop_width: "210px"
+
+collections:
+  team:
+    output: true
+
+defaults:
+  - scope: { path: "", type: "team" }
+    values: { layout: "team" }
+
+sass:
+  style: compressed
+  sass_dir: _sass
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md

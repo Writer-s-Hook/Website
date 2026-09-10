@@ -1,0 +1,25 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <p class="signoff">Empowering the next generation<br>of storytellers.</p>
+      <p class="footer-contact">
+        <span class="label">Contact</span>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      </p>
+      {% include social.html %}
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <span class="label">Quick links</span>
+      <ul>
+        {% assign items = site.data.menus.footer | sort: "weight" %}
+        {% for item in items %}
+        <li><a href="{{ item.url | relative_url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="container footer-legal">
+    <span>&copy; {{ 'now' | date: "%Y" }} Writer's Hook</span>
+    <span>{{ site.event.date_short }} &middot; {{ site.event.venue }}</span>
+  </div>
+</footer>

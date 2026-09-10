@@ -1,0 +1,116 @@
+---
+layout: default
+---
+
+<!-- The home page is a teaser. Every section below that has its own page shows a
+     short preview and links out; the canonical copy lives on the sub-page, and
+     nothing here should restate it at length. -->
+
+<section class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow">{{ site.event.date_short }} &middot; {{ site.event.venue }} &middot; Free</p>
+    <h1 class="hero-title">Write&nbsp;Your&nbsp;Story.<br><em>Find Your Voice.</em></h1>
+    <p class="hero-dek">{{ page.dek }}</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ site.event.register_url }}">Register for Free</a>
+      <a class="btn btn-ghost" href="{{ site.event.mentor_url }}">Become a Mentor or Sponsor</a>
+    </div>
+  </div>
+</section>
+
+{% include details-bar.html %}
+
+<section class="strip" id="about">
+  <div class="container measure-wide">
+    <p class="eyebrow">About the write-a-thon</p>
+    <h2 class="section-title">Words have the power to shape ideas, spark movements, and build worlds.</h2>
+    <div class="prose lead">
+      {{ content }}
+    </div>
+    <p class="section-more">
+      <a href="{{ '/about/' | relative_url }}">Why we run this, and who it&rsquo;s for <span aria-hidden="true">&rarr;</span></a>
+    </p>
+  </div>
+</section>
+
+<section class="strip strip-dark" id="expect">
+  <div class="container">
+    <p class="eyebrow">What to expect</p>
+    <h2 class="section-title">Five hours of drafting, and everything built around it.</h2>
+    <dl class="expect">
+      {% for item in site.data.expect limit: 3 %}
+      <div class="expect-item">
+        <dt>{{ item.title }}</dt>
+        <dd>{{ item.body }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+    <p class="section-more">
+      <a href="{{ '/about/#how-the-day-is-built' | relative_url }}">See how the whole day is built <span aria-hidden="true">&rarr;</span></a>
+    </p>
+  </div>
+</section>
+
+<section class="strip" id="tracks">
+  <div class="container">
+    <p class="eyebrow">Tracks &amp; genres</p>
+    <h2 class="section-title">Write in any format you love.</h2>
+    <div class="tracks">
+      {% for t in site.data.tracks %}
+      <div class="track">
+        <h3>{{ t.name }}</h3>
+        <p>{{ t.includes }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if site.data.schedule.entries %}
+<section class="strip strip-dark" id="schedule">
+  <div class="container measure-wide">
+    <p class="eyebrow">Schedule{% if site.data.schedule.draft %} <span class="tag">Draft — times not final</span>{% endif %}</p>
+    <h2 class="section-title">One Saturday, start to finish.</h2>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Full schedule, scrolls horizontally">
+      <table class="schedule-table">
+        <thead><tr><th>{{ site.data.schedule.time }}</th><th>{{ site.data.schedule.event }}</th></tr></thead>
+        <tbody>
+          {% for e in site.data.schedule.entries %}
+          <tr><td class="t">{{ e.time }}</td><td>{{ e.activity }}</td></tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="scroll-hint" aria-hidden="true">Scroll for the rest of the day &rarr;</p>
+  </div>
+</section>
+{% endif %}
+
+<section class="strip" id="faq">
+  <div class="container measure-wide">
+    <p class="eyebrow">Frequently asked questions</p>
+    <h2 class="section-title">Start here.</h2>
+    <dl class="faq">
+      {% for item in site.data.faq limit: 3 %}
+      <div class="faq-item">
+        <dt>{{ item.q }}</dt>
+        <dd>{{ item.a }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+    <p class="section-more">
+      <a href="{{ '/faq/' | relative_url }}">All {{ site.data.faq | size }} questions <span aria-hidden="true">&rarr;</span></a>
+    </p>
+  </div>
+</section>
+
+<section class="cta" id="register">
+  <div class="container cta-inner">
+    <h2>Bring a notebook. Leave with a draft.</h2>
+    <p>Registration is free and takes about five minutes. Bring a friend who insists they &ldquo;don&rsquo;t really write.&rdquo;</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#register">Register for Free</a>
+      <a class="btn btn-ghost" href="{{ '/support/' | relative_url }}">Mentor or sponsor us</a>
+    </div>
+  </div>
+</section>
