@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<!-- The home page is a teaser. Every section below that has its own page shows a
-     short preview and links out; the canonical copy lives on the sub-page, and
-     nothing here should restate it at length. -->
+<!-- The home page does not restate what a sub-page owns. "What to expect" lives on
+     /about/ and the questions live on /faq/; both are reachable from the nav and
+     the footer. Only content with no page of its own belongs here. -->
 
 <section class="hero">
   <div class="container hero-inner">
@@ -28,30 +28,12 @@ layout: default
       {{ content }}
     </div>
     <p class="section-more">
-      <a href="{{ '/about/' | relative_url }}">Why we run this, and who it&rsquo;s for <span aria-hidden="true">&rarr;</span></a>
+      <a href="{{ '/about/' | relative_url }}">How the day works, and who it&rsquo;s for <span aria-hidden="true">&rarr;</span></a>
     </p>
   </div>
 </section>
 
-<section class="strip strip-dark" id="expect">
-  <div class="container">
-    <p class="eyebrow">What to expect</p>
-    <h2 class="section-title">Five hours of drafting, and everything built around it.</h2>
-    <dl class="expect">
-      {% for item in site.data.expect limit: 3 %}
-      <div class="expect-item">
-        <dt>{{ item.title }}</dt>
-        <dd>{{ item.body }}</dd>
-      </div>
-      {% endfor %}
-    </dl>
-    <p class="section-more">
-      <a href="{{ '/about/#how-the-day-is-built' | relative_url }}">See how the whole day is built <span aria-hidden="true">&rarr;</span></a>
-    </p>
-  </div>
-</section>
-
-<section class="strip" id="tracks">
+<section class="strip strip-dark" id="tracks">
   <div class="container">
     <p class="eyebrow">Tracks &amp; genres</p>
     <h2 class="section-title">Write in any format you love.</h2>
@@ -67,7 +49,7 @@ layout: default
 </section>
 
 {% if site.data.schedule.entries %}
-<section class="strip strip-dark" id="schedule">
+<section class="strip" id="schedule">
   <div class="container measure-wide">
     <p class="eyebrow">Schedule{% if site.data.schedule.draft %} <span class="tag">Draft — times not final</span>{% endif %}</p>
     <h2 class="section-title">One Saturday, start to finish.</h2>
@@ -85,24 +67,6 @@ layout: default
   </div>
 </section>
 {% endif %}
-
-<section class="strip" id="faq">
-  <div class="container measure-wide">
-    <p class="eyebrow">Frequently asked questions</p>
-    <h2 class="section-title">Start here.</h2>
-    <dl class="faq">
-      {% for item in site.data.faq limit: 3 %}
-      <div class="faq-item">
-        <dt>{{ item.q }}</dt>
-        <dd>{{ item.a }}</dd>
-      </div>
-      {% endfor %}
-    </dl>
-    <p class="section-more">
-      <a href="{{ '/faq/' | relative_url }}">All {{ site.data.faq | size }} questions <span aria-hidden="true">&rarr;</span></a>
-    </p>
-  </div>
-</section>
 
 <section class="cta" id="register">
   <div class="container cta-inner">
