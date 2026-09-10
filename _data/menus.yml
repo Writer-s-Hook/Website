@@ -6,7 +6,7 @@ main:
     url: "/#schedule"
     weight: 2
   - name: "Tracks"
-    url: "/#tracks"
+    url: "/about/#tracks--genres"
     weight: 3
   - name: "FAQ"
     url: "/faq/"

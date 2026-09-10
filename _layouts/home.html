@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<!-- The home page does not restate what a sub-page owns. "What to expect" lives on
-     /about/ and the questions live on /faq/; both are reachable from the nav and
-     the footer. Only content with no page of its own belongs here. -->
+<!-- The home page carries only what has no page of its own: the hero, the key
+     event facts, and the running order. About, tracks, and the FAQ are owned by
+     their sub-pages and are reached through the nav and the footer. -->
 
 <section class="hero">
   <div class="container hero-inner">
@@ -19,34 +19,6 @@ layout: default
 </section>
 
 {% include details-bar.html %}
-
-<section class="strip" id="about">
-  <div class="container measure-wide">
-    <p class="eyebrow">About the write-a-thon</p>
-    <h2 class="section-title">Words have the power to shape ideas, spark movements, and build worlds.</h2>
-    <div class="prose lead">
-      {{ content }}
-    </div>
-    <p class="section-more">
-      <a href="{{ '/about/' | relative_url }}">How the day works, and who it&rsquo;s for <span aria-hidden="true">&rarr;</span></a>
-    </p>
-  </div>
-</section>
-
-<section class="strip strip-dark" id="tracks">
-  <div class="container">
-    <p class="eyebrow">Tracks &amp; genres</p>
-    <h2 class="section-title">Write in any format you love.</h2>
-    <div class="tracks">
-      {% for t in site.data.tracks %}
-      <div class="track">
-        <h3>{{ t.name }}</h3>
-        <p>{{ t.includes }}</p>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
 
 {% if site.data.schedule.entries %}
 <section class="strip" id="schedule">
@@ -64,17 +36,9 @@ layout: default
       </table>
     </div>
     <p class="scroll-hint" aria-hidden="true">Scroll for the rest of the day &rarr;</p>
+    <p class="section-more">
+      <a href="{{ '/about/' | relative_url }}">What the day involves, and who it&rsquo;s for <span aria-hidden="true">&rarr;</span></a>
+    </p>
   </div>
 </section>
 {% endif %}
-
-<section class="cta" id="register">
-  <div class="container cta-inner">
-    <h2>Bring a notebook. Leave with a draft.</h2>
-    <p>Registration is free and takes about five minutes. Bring a friend who insists they &ldquo;don&rsquo;t really write.&rdquo;</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#register">Register for Free</a>
-      <a class="btn btn-ghost" href="{{ '/support/' | relative_url }}">Mentor or sponsor us</a>
-    </div>
-  </div>
-</section>

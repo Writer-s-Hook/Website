@@ -40,7 +40,17 @@ Novelists three chapters deep, poets with a notes app full of fragments, and stu
 {% endfor %}
 </dl>
 
-The full running order for the day is on the [schedule]({{ '/#schedule' | relative_url }}), and the genres you can write in are listed under [tracks]({{ '/#tracks' | relative_url }}).
+The full running order for the day is on the [schedule]({{ '/#schedule' | relative_url }}).
+
+## Tracks & genres
+
+Write in any format you love. Pick a track when you register, or change your mind on the day — nobody is held to it.
+
+<div class="tracks">
+{% for t in site.data.tracks %}
+  <div class="track"><h3>{{ t.name }}</h3><p>{{ t.includes }}</p></div>
+{% endfor %}
+</div>
 
 ## After the write-a-thon
 
