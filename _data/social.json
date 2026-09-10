@@ -1,4 +1,4 @@
 [
-  { "name": "Email",     "link": "mailto:questions@writershook.org", "image": "images/social/email.svg" },
+  { "name": "Email",     "link": "mailto:questions@writershook.com", "image": "images/social/email.svg" },
   { "name": "Discord",   "link": "https://discord.gg/QGBxwR8N5f",       "image": "images/social/discord.svg" }
 ]

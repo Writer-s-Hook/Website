@@ -3,10 +3,10 @@ tagline: 'A free one-day creative write-a-thon for high school writers'
 description: >-
   A free one-day creative write-a-thon for Bay Area high school writers.
   Drafting sprints, craft workshops, and 1-on-1 mentorship. November 7, 2026.
-email: questions@writershook.org
+email: questions@writershook.com
 # Code of Conduct reporting address. MUST be an inbox a named organizer
 # monitors on the day — see conduct.md.
-conduct_email: questions@writershook.org
+conduct_email: questions@writershook.com
 conduct_reviewed: 'July 6th, 2024'
 
 baseurl: ''
