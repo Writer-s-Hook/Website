@@ -58,3 +58,14 @@
   display: flex; flex-wrap: wrap; gap: .85rem;
   margin: 0 0 3rem;
 }
+
+// The pair sits on a band. .btn-primary fills with the raw accent, which is
+// built to sit on dark: against cream it is only about 1.4:1 and the shape
+// disappears. Putting the band back under it is what the button expects, and
+// leaves the shared button classes alone.
+.action-band {
+  @include on-band;
+  padding: 2.2rem 2rem;
+  margin: 0 0 3rem;
+  .page-actions { margin: 0; }
+}
