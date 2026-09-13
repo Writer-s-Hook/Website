@@ -34,6 +34,9 @@
   --band-rule:     rgba(108,218,231,.20);
   --band-edge:     transparent;   // bands are self-evident against cream
 
+  // LearningHACK's mark: the organiser's purple, used only for the wordmark.
+  --lh-accent:    #A919C9;
+
   --focus:        #17727F;
   --shadow:       rgba(16,16,18,.10);
   --chip:         #101012;
@@ -64,6 +67,8 @@
   --band:        #1A1A21;
   --band-raised: #26262E;
   --band-edge:   #2E2E38;   // bands need a defined edge once everything is dark
+
+  --lh-accent:   #D486EC;   // brand purple lifted; #A919C9 goes muddy on black
 
   --focus:       #6CDAE7;
   --shadow:      rgba(0,0,0,.45);

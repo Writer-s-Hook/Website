@@ -9,11 +9,17 @@ standfirst: >-
   the reason that sentence is true.
 ---
 
+## Who runs Writer's Hook
+
+The day is organised and run by {% include learninghack.html %}. Sponsors help fund it.
+
 ## Our sponsors
 
-Writer's Hook is presented by LearningHACK.
-
+{% if site.data.sponsors.size > 0 %}
 {% include sponsors.html %}
+{% else %}
+We are signing up sponsors for {{ site.event.date_short }} now. The list will appear here as it fills.
+{% endif %}
 
 ## Sponsor the day
 

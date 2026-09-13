@@ -1,0 +1,29 @@
+@use "../base/variables" as *;
+
+// The organiser's wordmark, set in type rather than placed as an image.
+.lh-wordmark {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: -.015em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.lh-hack { color: var(--lh-accent); }
+
+// Closing credit on the home page: who puts the day on.
+.organizer {
+  @include on-band;
+  border-top: 1px solid var(--band-edge);
+  padding: 4.5rem 0;
+  text-align: center;
+}
+.organizer .lh-wordmark { font-size: clamp(1.9rem, 5vw, 2.6rem); }
+.organizer p {
+  margin: 1.1rem auto 0;
+  max-width: 44ch;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+// Footer credit sits inline with the contact details.
+.footer-sponsor .lh-wordmark { font-size: 1.15rem; }

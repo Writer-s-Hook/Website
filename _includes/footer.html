@@ -6,12 +6,10 @@
         <span class="label">Contact</span>
         <a href="mailto:{{ site.email }}">{{ site.email }}</a>
       </p>
-      {% if site.data.sponsors.size > 0 %}
       <p class="footer-sponsor">
-        <span class="label">Sponsored by</span>
-        {% for s in site.data.sponsors %}{{ s.name }}{% unless forloop.last %}, {% endunless %}{% endfor %}
+        <span class="label">Run by</span>
+        {% include learninghack.html %}
       </p>
-      {% endif %}
       {% include social.html %}
     </div>
     <nav class="footer-nav" aria-label="Footer">
