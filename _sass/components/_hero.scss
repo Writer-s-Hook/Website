@@ -22,18 +22,22 @@
 .hero-title {
   font-family: $display;
   font-weight: 400;
-  font-size: clamp(3.4rem, 11vw, 8rem);
+  font-size: clamp(2.6rem, 7vw, 5.2rem);
   line-height: 1.14;      // script ascenders and descenders need the room
   letter-spacing: .005em;
   margin: 0 0 1.6rem;
+  max-width: 20ch;
   text-wrap: balance;
   em { font-style: normal; color: var(--accent); }
 }
 .hero-dek {
-  font-size: clamp(1.15rem, 2vw, 1.45rem);
-  line-height: 1.6;
   color: var(--ink-soft);
-  max-width: 44ch;
+  max-width: 52ch;
   margin: 0 0 2.4rem;
+  p { margin: 0 0 .9rem; font-size: clamp(1.15rem, 2vw, 1.45rem); line-height: 1.6; }
+  p:last-child { margin-bottom: 0; }
+  // The supporting sentence carries more detail, so it sits a step down.
+  // Nested so the class beats the element selector above without !important.
+  .hero-dek-detail { font-size: 1.05rem; color: var(--band-soft); }
 }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .85rem; }

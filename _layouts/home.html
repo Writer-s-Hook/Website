@@ -9,8 +9,11 @@ layout: default
 <section class="hero">
   <div class="container hero-inner">
     <p class="eyebrow">{{ site.event.date_short }} &middot; {{ site.event.venue }} &middot; Free</p>
-    <h1 class="hero-title">Write&nbsp;Your&nbsp;Story.<br><em>Find Your Voice.</em></h1>
-    <p class="hero-dek">{{ page.dek }}</p>
+    <h1 class="hero-title">Giving you the tools for <em>your writing journey</em></h1>
+    <div class="hero-dek">
+      <p>{{ page.dek }}</p>
+      {% if page.dek_detail %}<p class="hero-dek-detail">{{ page.dek_detail }}</p>{% endif %}
+    </div>
     <div class="hero-actions">
       <a class="btn btn-primary" href="{{ site.event.register_url }}">Register for Free</a>
       <a class="btn btn-ghost" href="{{ site.event.mentor_url }}">Become a Mentor or Sponsor</a>
