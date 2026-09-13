@@ -49,3 +49,12 @@
   dd { margin: 0; color: var(--ink-soft); max-width: 64ch; font-size: 1.06rem; }
 }
 
+// Sign-off after the list. The last item closes with a rule, and .prose zeroes
+// the top margin on paragraphs, so without this the note starts flush against
+// that rule and reads as part of the final answer rather than a separate line.
+.prose .faq + p {
+  margin-top: 2.6rem;
+  font-family: $subhead;
+  font-size: 1.06rem;
+}
+
