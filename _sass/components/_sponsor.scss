@@ -1,0 +1,27 @@
+@use "../base/variables" as *;
+
+// Sponsor marks. The tile stays light in both themes because sponsor artwork
+// ships with fixed brand colours and cannot follow the page's ink tokens.
+.sponsor-list {
+  list-style: none; margin: 1.8rem 0 0; padding: 0;
+  display: grid; gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+@media (min-width: 620px) {
+  .sponsor-list { grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+}
+.sponsor {
+  background: #FFFDF6;
+  display: flex; align-items: center; justify-content: center;
+  padding: 2.2rem 1.8rem; min-height: 7.5rem;
+  img { max-width: 15rem; width: 100%; height: auto; display: block; }
+  a { display: block; line-height: 0; }
+}
+
+// Footer credit: a plain text line, so the mark is not repeated on every page.
+.footer-sponsor {
+  margin: 0 0 1.4rem;
+  font-family: $subhead; font-size: 1rem; color: var(--ink-soft);
+  .label { margin-bottom: .1rem; }
+}

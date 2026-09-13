@@ -9,6 +9,12 @@ standfirst: >-
   the reason that sentence is true.
 ---
 
+## Our sponsors
+
+Writer's Hook is presented by LearningHACK.
+
+{% include sponsors.html %}
+
 ## Sponsor the day
 
 Sponsorship goes directly to the things students touch: meals and snacks, workshop materials, prizes, and printing the post-event anthology that every contributor takes home.
