@@ -30,7 +30,7 @@ layout: default
     <h2 class="section-title">One Saturday, start to finish.</h2>
     <div class="table-wrap" tabindex="0" role="region" aria-label="Full schedule, scrolls horizontally">
       <table class="schedule-table">
-        <thead><tr><th>{{ site.data.schedule.time }}</th><th>{{ site.data.schedule.event }}</th></tr></thead>
+        <thead><tr><th scope="col">{{ site.data.schedule.time }}</th><th scope="col">{{ site.data.schedule.event }}</th></tr></thead>
         <tbody>
           {% for e in site.data.schedule.entries %}
           <tr><td class="t">{{ e.time }}</td><td>{{ e.activity }}</td></tr>
