@@ -4,17 +4,18 @@ layout: page
 permalink: "/support/"
 eyebrow: Sponsor us
 headline: Free costs something.
+actions:
+  - label: "Become a Mentor"
+    mailto_subject: "Mentoring at Writer's Hook"
+    style: "btn-ghost"
+  - label: "Become a Sponsor"
+    url: "https://hcb.hackclub.com/donations/start/learning-hack"
+    style: "btn-primary"
+    external: true
 standfirst: >-
   Every participant walks in without paying a cent. Sponsors and volunteer mentors are
   the reason that sentence is true.
 ---
-
-<div class="action-band">
-  <div class="page-actions">
-    <a class="btn btn-ghost" href="mailto:{{ site.email }}?subject=Mentoring%20at%20Writer%27s%20Hook">Become a Mentor</a>
-    <a class="btn btn-primary" href="https://hcb.hackclub.com/donations/start/learning-hack" target="_blank" rel="noopener">Become a Sponsor</a>
-  </div>
-</div>
 
 ## Who runs Writer's Hook
 
