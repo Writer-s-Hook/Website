@@ -22,7 +22,6 @@ event:
   eligibility: 'Ages 13–18, all backgrounds'
   cost: '100% free — meals, snacks, and prizes included'
   register_url: '#register'
-  mentor_url: '#register'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"

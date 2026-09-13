@@ -52,3 +52,9 @@
   margin: 1.4rem 0 1.6rem;
   p:last-child { margin-bottom: 0; }
 }
+
+// A pair of calls to action inside page content, as on the sponsor page.
+.page-actions {
+  display: flex; flex-wrap: wrap; gap: .85rem;
+  margin: 0 0 3rem;
+}
