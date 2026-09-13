@@ -11,7 +11,7 @@ standfirst: >-
 
 <div class="page-actions">
   <a class="btn btn-ghost" href="mailto:{{ site.email }}?subject=Mentoring%20at%20Writer%27s%20Hook">Become a Mentor</a>
-  <a class="btn btn-primary" href="https://hcb.hackclub.com/donations/start/learning-hack" target="_blank" rel="noopener">Become a Sponsor</a>
+  <a class="btn btn-on-paper" href="https://hcb.hackclub.com/donations/start/learning-hack" target="_blank" rel="noopener">Become a Sponsor</a>
 </div>
 
 ## Who runs Writer's Hook

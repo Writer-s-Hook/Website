@@ -111,6 +111,16 @@ a:hover { color: var(--accent-deep); }
   color: var(--ink);
   &:hover { background: var(--ink); color: var(--paper); }
 }
+// A filled button sitting on the page rather than on a band. .btn-primary fills
+// with the raw accent, which is right on the dark bands it normally sits on but
+// only about 1.4:1 against cream. This variant fills with the darker teal
+// instead. Deliberately separate from .btn-primary so band buttons are untouched.
+.btn-on-paper {
+  background: var(--accent-ink);
+  border-color: var(--accent-ink);
+  color: var(--paper);
+  &:hover { background: transparent; color: var(--accent-ink); border-color: var(--accent-ink); }
+}
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
