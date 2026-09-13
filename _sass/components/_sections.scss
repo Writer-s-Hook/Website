@@ -1,6 +1,16 @@
 @use "../base/variables" as *;
 
 // Schedule
+// This eyebrow stands in for the section heading that used to sit beneath it,
+// so it reads a step larger than a plain eyebrow - otherwise it lands at the
+// same size as the table's own column headers - and keeps the space the
+// heading used to put between itself and the table.
+.eyebrow-lead {
+  font-size: 1.05rem;
+  margin-bottom: 2.2rem;
+  .tag { font-size: .9rem; margin-left: .25rem; }
+}
+
 .schedule-table {
   width: 100%;
   min-width: 34rem;

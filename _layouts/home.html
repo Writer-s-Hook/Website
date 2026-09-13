@@ -26,7 +26,7 @@ layout: default
 {% if site.data.schedule.entries %}
 <section class="strip" id="schedule" aria-labelledby="schedule-label">
   <div class="container measure-wide">
-    <p class="eyebrow" id="schedule-label">Schedule{% if site.data.schedule.draft %} <span class="tag">Draft — times not final</span>{% endif %}</p>
+    <p class="eyebrow eyebrow-lead" id="schedule-label">Schedule{% if site.data.schedule.draft %} <span class="tag">Draft — times not final</span>{% endif %}</p>
     <div class="table-wrap" tabindex="0" role="region" aria-label="Full schedule, scrolls horizontally">
       <table class="schedule-table">
         <thead><tr><th scope="col">{{ site.data.schedule.time }}</th><th scope="col">{{ site.data.schedule.event }}</th></tr></thead>
