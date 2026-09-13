@@ -118,13 +118,6 @@ a:hover { color: var(--accent-deep); }
 
 // Strips --------------------------------------------------------------
 .strip { padding: 5rem 0; border-top: 1px solid var(--rule); }
-.strip-paper { background: var(--stock); }
-
-.strip-dark {
-  @include on-band;
-  border-top: 1px solid var(--band-edge);
-  border-bottom: 1px solid var(--band-edge);
-}
 
 .prose {
   font-size: 1.1rem;
@@ -139,7 +132,5 @@ a:hover { color: var(--accent-deep); }
   ul { padding-left: 1.15rem; margin: 0 0 1.2rem; }
   li { margin-bottom: .45rem; }
 }
-// Lead paragraph: the opening line of a teaser or intro reads one step up.
-.prose.lead p:first-child { font-size: 1.3rem; color: var(--ink); line-height: 1.6; }
 
 .table-wrap { overflow-x: auto; }

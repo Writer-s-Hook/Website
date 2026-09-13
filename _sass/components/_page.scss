@@ -15,27 +15,6 @@
   padding-bottom: 2.2rem; border-bottom: 1px solid var(--rule);
 }
 
-.principles {
-  margin: 1.6rem 0 0;
-  > div {
-    padding: 1.3rem 0;
-    border-top: 1px solid var(--rule);
-    &:last-child { border-bottom: 1px solid var(--rule); }
-  }
-  dt { font-family: $subhead; font-weight: 700; color: var(--ink); font-size: 1.2rem; }
-  dd { margin: .3rem 0 0; color: var(--ink-soft); font-size: 1.06rem; }
-}
-
-.doors {
-  display: grid; gap: 1px; background: var(--rule);
-  border: 1px solid var(--rule); margin-top: 1.8rem;
-  > div { background: var(--paper); padding: 1.5rem 1.4rem 1.7rem; }
-  h3 { font-family: $subhead; font-weight: 700; font-size: 1.4rem; margin: .6rem 0 .5rem; color: var(--ink); }
-  p  { margin: 0; font-size: 1rem; color: var(--ink-soft); }
-  .label { color: var(--accent-ink); }
-}
-@media (min-width: 780px) { .doors { grid-template-columns: repeat(3, 1fr); } }
-
 // Policy pages (code of conduct, AI policy) drop the script display face:
 // it is the hardest type on the site to read, and these are the pages people
 // read when something has gone wrong.
