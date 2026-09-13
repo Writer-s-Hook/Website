@@ -100,10 +100,10 @@ a:hover { color: var(--accent-deep); }
   transition: background .15s ease, color .15s ease, border-color .15s ease;
 }
 .btn-primary {
-  background: var(--btn-fill);
-  border-color: var(--btn-fill);
-  color: var(--btn-fill-on);
-  &:hover { background: transparent; color: var(--btn-fill); border-color: var(--btn-fill); }
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-on);
+  &:hover { background: transparent; color: var(--accent-ink); border-color: var(--accent); }
 }
 .btn-ghost {
   background: transparent;

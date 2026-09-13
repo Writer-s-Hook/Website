@@ -24,13 +24,6 @@
   --accent-deep:  #0F5A65;
   --accent-on:    #101012;   // type placed on an accent fill
 
-  // Filled-button surface. Both halves are indirections, so they follow the
-  // surface automatically: on cream this is the dark teal on a pale page; on a
-  // band and on the dark palette it resolves to bright turquoise on near-black.
-  // The raw accent is far too light to sit on cream - about 1.4:1 against it.
-  --btn-fill:     var(--accent-ink);
-  --btn-fill-on:  var(--paper);
-
   // --- band surface (dark panels) ---
   --band:          #101012;
   --band-raised:   #1E1E22;
