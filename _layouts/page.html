@@ -6,29 +6,17 @@ layout: default
     <p class="eyebrow">{{ page.eyebrow | default: page.title }}</p>
     <h1 class="page-title">{{ page.headline | default: page.title }}</h1>
     {% if page.standfirst %}<p class="standfirst">{{ page.standfirst }}</p>{% endif %}
-  </div>
 
-  {%- comment -%}
-    The band sits inside the article but outside .container, so it runs the full
-    width of the page the way the home page strips do. .prose is capped at 62ch
-    and left-aligned, so a breakout from inside the content flow would land
-    off-centre; this avoids needing one.
-  {%- endcomment -%}
-  {% if page.actions %}
-  <section class="action-band">
-    <div class="container">
-      <div class="page-actions">
-        {% for a in page.actions %}
-        <a class="btn {{ a.style | default: 'btn-ghost' }}"
-           href="{% if a.mailto_subject %}mailto:{{ site.email }}?subject={{ a.mailto_subject | url_encode | replace: '+', '%20' }}{% else %}{{ a.url }}{% endif %}"
-           {%- if a.external %} target="_blank" rel="noopener"{% endif %}>{{ a.label }}</a>
-        {% endfor %}
-      </div>
+    {% if page.actions %}
+    <div class="page-actions">
+      {% for a in page.actions %}
+      <a class="btn {{ a.style | default: 'btn-ghost' }}"
+         href="{% if a.mailto_subject %}mailto:{{ site.email }}?subject={{ a.mailto_subject | url_encode | replace: '+', '%20' }}{% else %}{{ a.url }}{% endif %}"
+         {%- if a.external %} target="_blank" rel="noopener"{% endif %}>{{ a.label }}</a>
+      {% endfor %}
     </div>
-  </section>
-  {% endif %}
+    {% endif %}
 
-  <div class="container measure">
     <div class="prose">
       {{ content }}
     </div>

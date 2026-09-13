@@ -10,7 +10,7 @@ actions:
     style: "btn-ghost"
   - label: "Become a Sponsor"
     url: "https://hcb.hackclub.com/donations/start/learning-hack"
-    style: "btn-primary"
+    style: "btn-ghost"
     external: true
 standfirst: >-
   Every participant walks in without paying a cent. Sponsors and volunteer mentors are
