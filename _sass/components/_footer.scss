@@ -43,3 +43,11 @@
   font-family: $subhead; font-size: .84rem; letter-spacing: .11em;
   text-transform: uppercase; color: var(--muted);
 }
+
+// The legal designation is exempt from the row's uppercasing: 501(c)3 is
+// written with a lowercase c, and text-transform would render it 501(C)3.
+.legal-status {
+  text-transform: none;
+  letter-spacing: .02em;
+  font-size: .88rem;
+}
