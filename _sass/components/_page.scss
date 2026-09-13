@@ -65,7 +65,7 @@
 // leaves the shared button classes alone.
 .action-band {
   @include on-band;
-  border-top: 1px solid var(--band-edge);
-  padding: 4rem 0;
+  padding: 3rem 0;
+  margin: 0 0 3.2rem;
   .page-actions { margin: 0; }
 }
