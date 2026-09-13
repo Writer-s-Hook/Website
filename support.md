@@ -46,3 +46,28 @@ No teaching experience required. You need to have written things and be willing 
 ## Volunteer
 
 Check-in, meals, room setup, and running the open mic all need hands. If you're an adult who can spare the day, we'd be glad to have you.
+
+## Sponsorship questions
+
+<dl class="faq">
+  <div class="faq-item">
+    <dt>Where does my fundraising money go?</dt>
+    <dd>As a non-profit organization, 100% of fundraising contributions directly support Writer's Hook. Funds cover venue rental, safety measures, dietary accommodations, and event memorabilia for students and judges. For additional questions, please contact us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</dd>
+  </div>
+  <div class="faq-item">
+    <dt>Is my donation tax deductible?</dt>
+    <dd>All donations are 100% tax deductible. We will provide a receipt for tax purposes.</dd>
+  </div>
+  <div class="faq-item">
+    <dt>How can I support the event financially?</dt>
+    <dd>You can support us by visiting the Sponsor Us tab on our website.</dd>
+  </div>
+  <div class="faq-item">
+    <dt>Do I have to donate to participate in Writer's Hook?</dt>
+    <dd>No, donations are entirely optional. Everyone is welcome to participate regardless of fundraising contributions.</dd>
+  </div>
+  <div class="faq-item">
+    <dt>Is there a fundraising minimum?</dt>
+    <dd>No, there is no minimum requirement. Every contribution helps us reach our goal.</dd>
+  </div>
+</dl>
