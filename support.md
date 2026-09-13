@@ -1,8 +1,8 @@
 ---
-title: Support Us
+title: Sponsor Us
 layout: page
 permalink: "/support/"
-eyebrow: Support us
+eyebrow: Sponsor us
 headline: Free costs something.
 standfirst: >-
   Every participant walks in without paying a cent. Sponsors and volunteer mentors are
