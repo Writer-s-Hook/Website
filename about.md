@@ -26,7 +26,7 @@ So we kept the format and changed the medium. Same energy, same free admission, 
 
 ## Who it's for
 
-Any student in grades 9–12, from any school, in any genre, at any level. Whether you are working on a fantasy novel, drafting spoken-word poetry, crafting personal essays, or writing your very first short story, there is a table here for you.
+Any student aged 13–18, from any school, in any genre, at any level. Whether you are working on a fantasy novel, drafting spoken-word poetry, crafting personal essays, or writing your very first short story, there is a table here for you.
 
 You do not need to have been published, placed in a contest, or taken a single creative writing elective. You do not need a project already underway — we run prompt sessions for exactly that reason.
 
