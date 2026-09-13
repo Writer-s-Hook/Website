@@ -5,9 +5,6 @@ main:
   - name: "Schedule"
     url: "/#schedule"
     weight: 2
-  - name: "Tracks"
-    url: "/about/#tracks--genres"
-    weight: 3
   - name: "FAQ"
     url: "/faq/"
     weight: 4
