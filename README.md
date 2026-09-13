@@ -1,7 +1,7 @@
 # Writer's Hook
 
 Website for Writer's Hook — a free one-day creative write-a-thon for high school
-writers. Saturday, November 7, 2026, Los Altos Hills Town Hall.
+writers. Sunday, November 8, 2026, Los Altos Hills Town Hall.
 
 Rebranded from LearningHACK. The old site's exported fragments live in the parent
 directory; this folder is a complete, self-contained Jekyll site.
