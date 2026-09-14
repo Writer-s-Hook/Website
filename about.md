@@ -5,29 +5,24 @@ permalink: "/about/"
 eyebrow: About Writer's Hook
 headline: Every writer starts with the same blank page.
 standfirst: >-
-  Writer's Hook is a free, one-day write-a-thon built on a simple premise: give high
-  school writers a room, a long stretch of hours, and people who take their drafts seriously.
+  At Writer's Hook, we are dedicated to bringing teen writers together in an all day
+  event in the Bay Area. Our mission is to encourage and inspire teens to write freely,
+  to express their creativity and ideas, and to develop the craft of writing.
 description: >-
-  Writer's Hook is a free one-day creative write-a-thon for high school writers —
-  our mission, where the event came from, and who it's for.
+  Writer's Hook is a free one-day creative write-a-thon for Bay Area teen writers —
+  our mission, and why a day like this is needed.
 ---
 
-## Our mission
+According to the American Academy of Arts and Sciences, students majoring in humanities have been on decline since 2012 with a total of 30% decrease.
 
-The school day is generous with reading and stingy with writing. A period here, a prompt there, a deadline that arrives before the idea does. Writer's Hook exists to invert that — to hand high school writers a full day with nothing on the schedule but their own work.
+[Report: Humanities Majors Disappearing](https://www.insidehighered.com/news/students/academics/2026/09/10/report-humanities-majors-disappearing), Kathryn Palmer, *Inside Higher Ed*, September 10, 2026
+{: .source}
 
-Most young writers are not short on talent or ideas. They are short on uninterrupted time, and short on readers who meet a draft as a draft rather than as something to be graded.
+There is evidence suggested that students in 8th through 12th struggle with writing proficiently at their grade level. Research shows 75% of the students are in this category.
 
-## Where this came from
+[National Library of Medicine](https://pmc.ncbi.nlm.nih.gov/articles/PMC8095675/), C. Wood, C. Schatschneider and S. Hart, May 4, 2021
+{: .source}
 
-Writer's Hook grew out of the Bay Area's hackathon tradition — the idea that you can give students a day, a room, and a little structure, and they will leave with something that did not exist that morning. Programmers have had that for years. Writers have not.
+Most writing programs are inaccessible to many teens due to cost and limited spaces.
 
-So we kept the format and changed the medium. Same energy, same free admission, same end-of-day showcase. The thing you leave with is a draft instead of a demo.
-
-## Who it's for
-
-Any student aged 13–18, from any school, in any genre, at any level. Whether you are working on a fantasy novel, drafting spoken-word poetry, crafting personal essays, or writing your very first short story, there is a table here for you.
-
-You do not need to have been published, placed in a contest, or taken a single creative writing elective. You do not need a project already underway — we run prompt sessions for exactly that reason.
-
-Novelists three chapters deep, poets with a notes app full of fragments, and students who have never finished a story all end up in the same room.
+These are the very reasons we want a space for all teens to develop and deepen their writing skills in a safe, fun, and supportive environment.

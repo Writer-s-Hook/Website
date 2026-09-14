@@ -32,6 +32,15 @@
   p:last-child { margin-bottom: 0; }
 }
 
+// Citation under a claim: smaller and quieter than the body, so it reads as a
+// source rather than as another sentence of the argument.
+.source {
+  font-family: $subhead;
+  font-size: .92rem;
+  color: var(--muted);
+  margin: -.6rem 0 1.6rem;
+}
+
 // A pair of calls to action inside page content, as on the sponsor page.
 .page-actions {
   display: flex; flex-wrap: wrap; gap: .85rem;
