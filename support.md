@@ -9,7 +9,7 @@ actions:
     mailto_subject: "Mentoring at Writer's Hook"
     style: "btn-ghost"
   - label: "Become a Sponsor"
-    url: "https://hcb.hackclub.com/donations/start/learning-hack"
+    url: "https://hcb.hackclub.com/donations/start/writershook"
     style: "btn-ghost"
     external: true
 standfirst: >-
