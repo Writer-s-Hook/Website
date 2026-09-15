@@ -5,8 +5,8 @@ permalink: "/volunteer/"
 eyebrow: Volunteer
 headline: Volunteer
 actions:
-  - label: "Become a Mentor"
-    mailto_subject: "Mentoring at Writer's Hook"
+  - label: "Become a Volunteer"
+    mailto_subject: "Volunteering at Writer's Hook"
     style: "btn-ghost"
 description: >-
   Writer's Hook is looking for authors, journalists, editors, teachers and college
