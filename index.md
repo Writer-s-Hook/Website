@@ -2,8 +2,8 @@
 title: Writer's Hook
 layout: home
 dek: >-
-  Writer’s Hook is a write-a-thon focused on preparing students for professionally
-  pursuing all forms of creative writing.
+  Writer’s Hook is a write-a-thon focused on honing the craft of students’
+  creative writing in all forms.
 dek_detail: >-
   In a full day event, teens across the Bay Area attend intensive writing workshops,
   a presentation from a published author, and gain inside advice about writing

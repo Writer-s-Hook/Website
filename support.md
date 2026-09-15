@@ -3,7 +3,7 @@ title: Sponsor Us
 layout: page
 permalink: "/support/"
 eyebrow: Sponsor us
-headline: Free costs something.
+headline: We need your support
 actions:
   - label: "Become a Mentor"
     mailto_subject: "Mentoring at Writer's Hook"
@@ -13,41 +13,24 @@ actions:
     style: "btn-ghost"
     external: true
 standfirst: >-
-  Every participant walks in without paying a cent. Sponsors and volunteer mentors are
-  the reason that sentence is true.
+  Every student can walk in without paying a cent. Sponsors and volunteers are the
+  reason that is possible.
 ---
 
 ## Who runs Writer's Hook
 
-The day is organised and run by {% include learninghack.html %}. Sponsors help fund it.
+Writer's Hook is organised and run by {% include learninghack.html %}, a hackathon that empowered girls to code.
 
-## Our sponsors
+## Why sponsor us?
 
-{% if site.data.sponsors.size > 0 %}
-{% include sponsors.html %}
-{% else %}
-We are signing up sponsors for {{ site.event.date_short }} now. The list will appear here as it fills.
-{% endif %}
+Many writing programs are expensive and highly selective, turning away most teens who apply. Writer's Hook ensures the same workshops, mentors, and feedback are accessible to any young writer who attends. This access is especially important in a time when interest in humanities is declining and humanities programs and departments are disappearing from schools. Many students with an aptitude and passion for writing hesitate to consider writing as a serious field of study or potential career. Writer's Hook helps students discover the joys of creative writing, develop confidence in their abilities, and explore humanities-related academic and career paths. By sponsoring Writer's Hook, you are investing in the next generations of writers and helping ensure creative voices remain an important part of our society.
 
-## Sponsor the day
+## Sponsorship perks
 
-Sponsorship goes directly to the things students touch: meals and snacks, workshop materials, prizes, and printing the post-event anthology that every contributor takes home.
+- **Publicity.** Sponsors are credited on the website and advertised during the event. Sponsor logos are printed on the event t-shirts.
+- **Positive community impact.** Support today's generation of young writers by giving the tools they need to succeed.
 
-Local bookstores, independent presses, libraries, literary magazines, tutoring centres, and neighbourhood businesses are all welcome — as are families who would rather give than be listed.
-
-Write to [{{ site.email }}](mailto:{{ site.email }}) and we will send the sponsorship tiers.
-
-## Mentor a writer
-
-We are looking for published authors, journalists, editors, teachers, and university writing students who can give a three-hour block on {{ site.event.date }}. You'll run one craft workshop, or take a rotation of one-on-one sessions with students working on their drafts.
-
-No teaching experience required. You need to have written things and be willing to talk honestly about how.
-
-## Volunteer
-
-Check-in, meals, room setup, and running the open mic all need hands. If you're an adult who can spare the day, we'd be glad to have you.
-
-## Sponsorship questions
+## FAQ
 
 <dl class="faq">
   <div class="faq-item">
