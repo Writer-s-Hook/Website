@@ -3,7 +3,7 @@ title: FAQ
 layout: page
 permalink: "/faq/"
 eyebrow: Frequently asked questions
-headline: The things everyone asks first.
+headline: The things everyone asks.
 ---
 
 <dl class="faq">

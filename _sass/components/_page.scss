@@ -15,11 +15,9 @@
   padding-bottom: 2.2rem; border-bottom: 1px solid var(--rule);
 }
 
-// Policy pages (code of conduct, AI policy) drop the script display face:
-// it is the hardest type on the site to read, and these are the pages people
-// read when something has gone wrong.
+// Policy pages keep the site's display face for their title, like every other
+// page; only their denser lists are treated differently.
 .page-policy {
-  .page-title { font-family: $subhead; font-weight: 700; letter-spacing: -.01em; line-height: 1.2; }
   .prose li { margin-bottom: .35rem; }
 }
 
