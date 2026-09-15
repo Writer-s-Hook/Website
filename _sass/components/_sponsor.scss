@@ -5,23 +5,29 @@
 // which against the cream page read as washed-out rectangles.
 .sponsor-list {
   list-style: none; margin: 1.6rem 0 0; padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  // A row rather than equal columns: halving the width left a wide mark filling
+  // its half while a compact one floated in the middle of the other.
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 1.5rem 3rem;
 }
 .sponsor {
-  display: flex; align-items: center; justify-content: center;
-  padding: 2rem 1.5rem;
-  &:first-child { padding-left: 0; justify-content: flex-start; }
+  display: flex; align-items: center; justify-content: flex-start;
+  padding: 1.6rem 0;
   // Normalised by height: the marks are 2.9:1 and 1.3:1, so matching their
   // widths would leave one twice as tall as the other.
   img { max-width: 17rem; max-height: 5.6rem; width: auto; height: auto; display: block; }
+}
+
+// The town seal is near-square where the Hack Club mark is a wide banner, so an
+// equal height cap makes it read as much the smaller of the two. Taller here
+// puts the two at comparable visual weight.
+.sponsor--town-of-los-altos-hills {
+  img { max-height: 8.5rem; }
   a { display: block; line-height: 0; }
 }
 @media (max-width: 640px) {
   .sponsor-list { grid-template-columns: 1fr; }
-  .sponsor {
-    padding-left: 0; justify-content: flex-start;
-  }
+  .sponsor { padding-left: 0; }
 }
 
 // Footer credit: a plain text line, so the mark is not repeated on every page.
