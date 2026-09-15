@@ -23,7 +23,7 @@
         <li><a href="{{ item.url | relative_url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.name }}</a></li>
         {% endfor %}
       </ul>
-      <a class="btn btn-primary" href="{{ site.event.register_url }}">Register free</a>
+      <a class="btn btn-primary" href="{{ site.event.register_url }}" target="_blank" rel="noopener">Register free</a>
     </nav>
   </div>
 </header>
