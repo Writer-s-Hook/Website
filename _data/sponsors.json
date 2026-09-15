@@ -1,1 +1,4 @@
-[]
+[
+  { "name": "Hack Club",                "logo": "images/sponsors/hackclub.svg" },
+  { "name": "Town of Los Altos Hills",  "logo": "images/sponsors/los-altos-hills.png" }
+]
