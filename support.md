@@ -5,9 +5,6 @@ permalink: "/support/"
 eyebrow: Sponsor us
 headline: We need your support
 actions:
-  - label: "Become a Mentor"
-    mailto_subject: "Mentoring at Writer's Hook"
-    style: "btn-ghost"
   - label: "Become a Sponsor"
     url: "https://hcb.hackclub.com/donations/start/writershook"
     style: "btn-ghost"

@@ -3,7 +3,7 @@ title: About
 layout: page
 permalink: "/about/"
 eyebrow: About Writer's Hook
-headline: Every writer starts with the same blank page.
+headline: Where every writer begin…
 standfirst: >-
   At Writer's Hook, we are dedicated to bringing teen writers together in an all day
   event in the Bay Area. Our mission is to encourage and inspire teens to write freely,
