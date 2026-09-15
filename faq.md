@@ -2,7 +2,7 @@
 title: FAQ
 layout: page
 permalink: "/faq/"
-eyebrow: Frequently asked questions
+eyebrow: ""
 headline: The things everyone asks first.
 ---
 
