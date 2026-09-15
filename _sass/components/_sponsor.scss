@@ -4,7 +4,9 @@
 // cells and no filled tiles - an earlier version boxed each mark on near-white,
 // which against the cream page read as washed-out rectangles.
 .sponsor-list {
-  list-style: none; margin: 1.6rem 0 0; padding: 0;
+  // No top margin: the label's own bottom margin sets the gap, rather than
+  // stacking a second one on top of it.
+  list-style: none; margin: 0; padding: 0;
   // A row rather than equal columns: halving the width left a wide mark filling
   // its half while a compact one floated in the middle of the other.
   display: flex; flex-wrap: wrap; align-items: center;
@@ -12,7 +14,7 @@
 }
 .sponsor {
   display: flex; align-items: center; justify-content: flex-start;
-  padding: 1.6rem 0;
+  padding: .5rem 0;
   // Normalised by height: the marks are 2.9:1 and 1.3:1, so matching their
   // widths would leave one twice as tall as the other.
   img { max-width: 17rem; max-height: 5.6rem; width: auto; height: auto; display: block; }
