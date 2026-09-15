@@ -30,10 +30,6 @@ Many writing programs are expensive and highly selective, turning away most teen
 - **Publicity.** Sponsors are credited on the website and advertised during the event. Sponsor logos are printed on the event t-shirts.
 - **Positive community impact.** Support today's generation of young writers by giving the tools they need to succeed.
 
-## Sponsors and partners
-
-{% include sponsors.html %}
-
 ## FAQ
 
 <dl class="faq">

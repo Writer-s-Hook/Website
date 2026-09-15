@@ -42,6 +42,15 @@ layout: default
 </section>
 {% endif %}
 
+{% if site.data.sponsors.size > 0 %}
+<section class="strip" id="sponsors" aria-labelledby="sponsors-label">
+  <div class="container measure-wide">
+    <p class="eyebrow" id="sponsors-label">Sponsors &amp; partners</p>
+    {% include sponsors.html %}
+  </div>
+</section>
+{% endif %}
+
 <section class="organizer">
   <div class="container">
     <p class="eyebrow">Run by</p>
