@@ -8,7 +8,9 @@
   <!-- Browsers request /favicon.ico at the root on their own, before the tags
        below are parsed, so it has to exist as well as be declared. -->
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="icon" type="image/png" sizes="64x64" href="{{ '/images/wh-favicon.png' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/wh-apple-touch-icon.png' | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Moon+Dance&family=Quattrocento:wght@400;700&family=Spectral:ital,wght@0,300;0,400;0,600;1,400&display=swap">
