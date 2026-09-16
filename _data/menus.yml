@@ -11,9 +11,6 @@ main:
   - name: "Code of Conduct"
     url: "/conduct/"
     weight: 4
-  - name: "Volunteer"
-    url: "/volunteer/"
-    weight: 5
   - name: "Sponsor Us"
     url: "/sponsor/"
     weight: 6
@@ -34,9 +31,6 @@ footer:
   - name: "AI Policy"
     url: "/ai/"
     weight: 5
-  - name: "Volunteer"
-    url: "/volunteer/"
-    weight: 6
   - name: "Sponsor Us"
     url: "/sponsor/"
     weight: 7

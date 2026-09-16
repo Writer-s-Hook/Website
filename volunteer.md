@@ -2,6 +2,7 @@
 title: Volunteer
 layout: page
 permalink: "/volunteer/"
+noindex: true
 eyebrow: Volunteer
 headline: Volunteer
 actions:
