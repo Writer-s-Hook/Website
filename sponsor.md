@@ -16,7 +16,7 @@ standfirst: >-
 
 ## Who runs Writer's Hook
 
-Writer's Hook is organised and run by {% include learninghack.html %}, a hackathon that empowered girls to code.
+Writer's Hook is organized and run by {% include learninghack.html %}, a student-led initiative that empowers teens to explore and develop their interests in technology and the arts.
 
 ## Why sponsor us?
 
