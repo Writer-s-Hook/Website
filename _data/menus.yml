@@ -15,7 +15,7 @@ main:
     url: "/volunteer/"
     weight: 5
   - name: "Sponsor Us"
-    url: "/support/"
+    url: "/sponsor/"
     weight: 6
 
 footer:
@@ -38,5 +38,5 @@ footer:
     url: "/volunteer/"
     weight: 6
   - name: "Sponsor Us"
-    url: "/support/"
+    url: "/sponsor/"
     weight: 7

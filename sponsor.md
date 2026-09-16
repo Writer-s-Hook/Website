@@ -1,7 +1,7 @@
 ---
 title: Sponsor Us
 layout: page
-permalink: "/support/"
+permalink: "/sponsor/"
 eyebrow: Sponsor us
 headline: We need your support
 actions:
