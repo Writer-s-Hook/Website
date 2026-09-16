@@ -21,6 +21,6 @@ entries:
   - time: "3:15 PM"
     activity: "Guest Speaker Session"
   - time: "3:15 PM"
-    activity: "Judging"
+    activity: "Judging (runs concurrently)"
   - time: "4:45 PM"
     activity: "Awards & Closing Ceremony"

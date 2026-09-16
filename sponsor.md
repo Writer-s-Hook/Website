@@ -20,23 +20,23 @@ Writer's Hook is organized and run by {% include learninghack.html %}, a student
 
 ## Why sponsor us?
 
-Many writing programs are expensive and highly selective, turning away most teens who apply. Writer's Hook ensures the same workshops, mentors, and feedback are accessible to any young writer who attends. This access is especially important in a time when interest in humanities is declining and humanities programs and departments are disappearing from schools. Many students with an aptitude and passion for writing hesitate to consider writing as a serious field of study or potential career. Writer's Hook helps students discover the joys of creative writing, develop confidence in their abilities, and explore humanities-related academic and career paths. By sponsoring Writer's Hook, you are investing in the next generations of writers and helping ensure creative voices remain an important part of our society.
+Many writing programs are expensive and highly selective, turning away most teens who apply. Writer's Hook ensures the same workshops, mentors, and feedback are accessible to any young writer who attends. This access is especially important in a time when interest in humanities is declining and humanities programs and departments are disappearing from schools. Many students with an aptitude and passion for writing hesitate to consider writing as a serious field of study or potential career. Writer's Hook helps students discover the joys of creative writing, develop confidence in their abilities, and explore humanities-related academic and career paths. By sponsoring Writer's Hook, you are investing in the next generation of writers and helping ensure creative voices remain an important part of our society.
 
 ## Sponsorship perks
 
 - **Publicity.** Sponsors are credited on the website and advertised during the event. Sponsor logos are printed on the event t-shirts.
-- **Positive community impact.** Support today's generation of young writers by giving the tools they need to succeed.
+- **Positive community impact.** Support today's generation of young writers by giving them the tools they need to succeed.
 
 ## FAQ
 
 <dl class="faq">
   <div class="faq-item">
     <dt>Where does my fundraising money go?</dt>
-    <dd>As a non-profit organization, 100% of fundraising contributions directly support Writer's Hook. Funds cover venue rental, safety measures, dietary accommodations, and event memorabilia for students and judges. For additional questions, please contact us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</dd>
+    <dd>100% of fundraising contributions directly support Writer's Hook. Funds cover venue rental, safety measures, dietary accommodations, and event memorabilia for students and judges. For additional questions, please contact us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</dd>
   </div>
   <div class="faq-item">
     <dt>Is my donation tax deductible?</dt>
-    <dd>All donations are 100% tax deductible. We will provide a receipt for tax purposes.</dd>
+    <dd>Yes — donations go through our fiscal sponsor, Hack Club, a 501(c)(3) nonprofit, and are tax deductible. You'll receive a receipt.</dd>
   </div>
   <div class="faq-item">
     <dt>How can I support the event financially?</dt>
