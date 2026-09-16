@@ -13,9 +13,9 @@ description: >-
   our mission, and why a day like this is needed.
 ---
 
-According to the American Academy of Arts and Science, students majoring in humanities have been on the decline since 2012 with a total of 30% decrease.
+According to the American Academy of Arts and Sciences, the number of students majoring in the humanities has declined since 2012, a total decrease of 30%.
 
-There is evidence suggested that students in 8th through 12th struggle with writing proficiently at their grade level. Research published by the National Library of Medicine found 75% of the students fall in this category.
+Evidence suggests that students in 8th through 12th grade struggle to write proficiently at their grade level. Research published by the National Library of Medicine found that 75% of students fall in this category.
 
 Most writing programs are inaccessible to many teens due to cost and limited spaces.
 
