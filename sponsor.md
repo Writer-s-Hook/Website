@@ -32,11 +32,11 @@ Many writing programs are expensive and highly selective, turning away most teen
 <dl class="faq">
   <div class="faq-item">
     <dt>Where does my fundraising money go?</dt>
-    <dd>As a non-profit organization, 100% of fundraising contributions directly support Writer's Hook. Funds cover venue rental, safety measures, dietary accommodations, and event memorabilia for students and judges. For additional questions, please contact us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</dd>
+    <dd>100% of fundraising contributions directly support Writer's Hook. Funds cover venue rental, safety measures, dietary accommodations, and event memorabilia for students and judges. For additional questions, please contact us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</dd>
   </div>
   <div class="faq-item">
     <dt>Is my donation tax deductible?</dt>
-    <dd>All donations are 100% tax deductible. We will provide a receipt for tax purposes.</dd>
+    <dd>Yes — donations go through our fiscal sponsor, Hack Club, a 501(c)(3) nonprofit, and are tax deductible. You'll receive a receipt.</dd>
   </div>
   <div class="faq-item">
     <dt>How can I support the event financially?</dt>
