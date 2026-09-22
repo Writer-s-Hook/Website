@@ -27,6 +27,12 @@
   img { max-height: 8.5rem; }
   a { display: block; line-height: 0; }
 }
+// A 6.3:1 bar, so the shared width cap leaves it barely 43px tall - half the
+// weight of the others. Wider here brings it back into line.
+.sponsor--family-optometry-of-silicon-valley {
+  img { max-width: 20rem; }
+}
+
 @media (max-width: 640px) {
   .sponsor-list { grid-template-columns: 1fr; }
   .sponsor { padding-left: 0; }
