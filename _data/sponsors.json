@@ -1,14 +1,17 @@
 [
   {
     "name": "Hack Club",
-    "logo": "images/sponsors/hackclub.svg"
+    "logo": "images/sponsors/hackclub.svg",
+    "url":  "https://hackclub.com"
   },
   {
     "name": "Town of Los Altos Hills",
-    "logo": "images/sponsors/los-altos-hills.png"
+    "logo": "images/sponsors/los-altos-hills.png",
+    "url":  "https://www.losaltoshills.ca.gov"
   },
   {
     "name": "Family Optometry of Silicon Valley",
-    "logo": "images/sponsors/family-optometry.svg"
+    "logo": "images/sponsors/family-optometry.svg",
+    "url":  "https://www.familyoptometrysv.net/"
   }
 ]
