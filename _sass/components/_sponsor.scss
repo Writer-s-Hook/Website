@@ -11,6 +11,9 @@
   // its half while a compact one floated in the middle of the other.
   display: flex; flex-wrap: wrap; align-items: center;
   gap: 1.5rem 3rem;
+  // The row sits inside .measure-wide, which caps children at 78ch - narrower
+  // than the marks need, so they wrapped. Logos are not a reading measure.
+  max-width: none;
 }
 .sponsor {
   display: flex; align-items: center; justify-content: flex-start;
