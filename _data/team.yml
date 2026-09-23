@@ -1,0 +1,65 @@
+# The team shown on /about/.
+# To add a photo, drop the file in images/team/ and set `photo:` to its path,
+# e.g. photo: "images/team/alisha-shetty.jpg". Until then the card shows the
+# member's initials in place of the portrait.
+- name: "Alisha Shetty"
+  photo: ""
+  bio: >-
+    I'm a senior and the president and founder of the Creative Writing Club at my high
+    school. I am also an alumni of the 2025 Sarah Lawrence Writer's Week, Iowa Young
+    Writers' Studio Winter 2025 Online Course, and the 2026 Kenyon Young Writers Summer
+    Residential Workshop. I enjoy reading YA novels and manga. My favorite genres to
+    write about are fantasy and realistic fiction. I want to use Writer's Hook to help
+    other young writers gain similar experiences and tools I've received in my writing
+    journey.
+
+- name: "Siddarth Viswanathan"
+  photo: ""
+  bio: >-
+    Hi, I'm Sid, a sophomore at Archbishop Mitty HS in San Jose. I am a STEM lover and
+    robot nerd. I'm on Mitty's FRC team and part of nearly every engineering-based club
+    at Mitty. Most of my free time goes into working on various types of projects, the
+    most recent ones being an automated paper trader and an APUSH study app. I also love
+    to play guitar and cook; it helps me relax. As much as I love AI, I value human
+    creativity even more. I love how Writer's Hook provides writers with an opportunity
+    to write for the love of it, not just for a school assignment.
+
+- name: "Stuti Shah"
+  photo: ""
+  bio: >-
+    Hi! I'm a senior at Notre Dame San Jose. I love reading, and a few of my favorite
+    genres are mystery, science fiction and historical fiction. Additionally, I love
+    writing, all the way from poetry to research papers to novels. Outside of reading and
+    writing, you can find me doing audio, learning languages, researching military planes,
+    coding websites and games and long-distance running, all ways that I use to further
+    explore and express my creativity. Being able to help out with this write-a-thon that
+    inspires other young people to discover and relish in the joy of writing is something
+    I feel incredibly grateful to be a part of. I can't wait to see how the event turns
+    out and I hope to see you there!
+
+- name: "Maryam Hashmi"
+  photo: ""
+  bio: ""
+
+- name: "Sofia Aranda"
+  photo: ""
+  bio: >-
+    Hello! I am a sophomore in high school and I am currently a part of Notre Dame's
+    Robotics Team. I am also the treasure of our school's Creative Writing Club. I love
+    reading in my free time; I can spend hours just reading and being pulled into the
+    fantastical world authors have created. My love for stories led me to join the
+    Creative Writing Club, helping me grow my writing skills while bringing my stories to
+    life. Now I hope to bring this experience to other aspiring writers through the
+    Writer's Hook.
+
+- name: "Sadie Romero"
+  photo: ""
+  bio: >-
+    What's up! I am a sophomore at Notre Dame High School who loves to read AND write! I
+    even wrote my first ever play over my summer before sophomore year called Council
+    Meeting, which centers on a single student council meeting of unique middle schoolers
+    pitching fundraisers in presentations with their own pizazz! I also have been the
+    secretary of the Creative Writing Club here at ND since I was a Freshman and have
+    been a Potterhead and Hunger Games Tribute since I was in sixth grade! I hope my love
+    for writing and creativity rubs off on other young writers at Writer's Hook and can't
+    wait to read more wonderful stories!

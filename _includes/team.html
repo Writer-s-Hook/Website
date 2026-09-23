@@ -1,0 +1,23 @@
+{% comment %}
+  Team cards from _data/team.yml. Each reserves a portrait slot: with a `photo`
+  set it shows the picture, without one it shows the member's initials, so the
+  row stays even until the photographs arrive.
+{% endcomment %}
+{% if site.data.team.size > 0 %}
+<ul class="team">
+  {% for m in site.data.team %}
+  <li class="team-member">
+    <div class="team-photo">
+      {% if m.photo != "" %}
+      <img src="{{ m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy">
+      {% else %}
+      {% assign parts = m.name | split: " " %}
+      <span class="team-initials" aria-hidden="true">{{ parts[0] | slice: 0 }}{{ parts[1] | slice: 0 }}</span>
+      {% endif %}
+    </div>
+    <h3 class="team-name">{{ m.name }}</h3>
+    {% if m.bio != "" %}<p class="team-bio">{{ m.bio }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

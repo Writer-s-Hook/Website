@@ -1,0 +1,38 @@
+@use "../base/variables" as *;
+
+.team {
+  list-style: none; padding: 0;
+  margin: 1.8rem 0 0;
+  display: grid;
+  gap: 2.6rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+// The portrait slot is reserved whether or not there is a picture yet, so
+// adding one later does not reflow the section.
+.team-photo {
+  aspect-ratio: 4 / 5;
+  background: var(--stock);
+  border: 1px solid var(--rule);
+  margin-bottom: 1rem;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  img { width: 100%; height: 100%; object-fit: cover; display: block; }
+}
+.team-initials {
+  font-family: $subhead; font-weight: 700;
+  font-size: 2.2rem; letter-spacing: .06em;
+  color: var(--muted);
+}
+
+.team-name {
+  font-family: $subhead; font-weight: 700;
+  font-size: 1.2rem; line-height: 1.25;
+  color: var(--ink);
+  margin: 0 0 .5rem;
+}
+.team-bio {
+  margin: 0;
+  font-size: .98rem; line-height: 1.55;
+  color: var(--ink-soft);
+}

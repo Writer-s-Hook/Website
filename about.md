@@ -20,3 +20,7 @@ Evidence suggests that students in 8th through 12th grade struggle to write prof
 Most writing programs are inaccessible to many teens due to cost and limited spaces.
 
 These are the very reasons we want a space for all teens to develop and deepen their writing skills in a safe, fun, and supportive environment.
+
+## Our team
+
+{% include team.html %}
