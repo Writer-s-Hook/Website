@@ -1,26 +1,35 @@
 @use "../base/variables" as *;
 
 // One member per row.
+// .measure caps its children at 62ch; these rows want the container's width,
+// so the portrait can sit out at the right edge rather than mid-page.
+.team, .team-heading { max-width: none; }
+
 .team {
   list-style: none; padding: 0;
   margin: 1.8rem 0 0;
-  display: grid; gap: 3rem;
+  display: grid; gap: 3.4rem;
 }
-.team-member + .team-member { border-top: 1px solid var(--rule); padding-top: 3rem; }
+.team-heading {
+  font-family: $subhead; font-weight: 700; color: var(--ink);
+  font-size: 1.85rem; line-height: 1.25;
+  margin: 2.8rem 0 .9rem;
+}
+.team-member + .team-member { border-top: 1px solid var(--rule); padding-top: 3.4rem; }
 
 .team-name {
   font-family: $subhead; font-weight: 700;
-  font-size: 1.35rem; line-height: 1.25;
+  font-size: 1.75rem; line-height: 1.25;
   color: var(--ink);
   text-align: center;
-  margin: 0 0 1.2rem;
+  margin: 0 0 1.6rem;
 }
 
 // Bio left, portrait right.
 .team-body {
   display: grid;
-  grid-template-columns: 1fr 11rem;
-  gap: 1.6rem;
+  grid-template-columns: 1fr 12rem;
+  gap: 3rem;
   align-items: start;
 }
 .team-bio {

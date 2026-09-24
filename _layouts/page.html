@@ -20,5 +20,12 @@ layout: default
     <div class="prose">
       {{ content }}
     </div>
+
+    {%- comment -%} Outside .prose: the team rows are wider than a reading
+         measure, so they are not held to one. {%- endcomment -%}
+    {% if page.team %}
+    <h2 class="team-heading" id="our-team">Our team</h2>
+    {% include team.html %}
+    {% endif %}
   </div>
 </article>
