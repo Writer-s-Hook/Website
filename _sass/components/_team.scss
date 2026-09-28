@@ -38,9 +38,10 @@
   color: var(--ink-soft);
 }
 
-// Reserved whether or not a picture is set yet.
+// Round frame, reserved whether or not a picture is set yet.
 .team-photo {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
+  border-radius: 50%;
   background: var(--stock);
   border: 1px solid var(--rule);
   display: flex; align-items: center; justify-content: center;
