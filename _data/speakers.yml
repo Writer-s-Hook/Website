@@ -1,0 +1,42 @@
+# The guests shown on /speakers/ and, as a row of portraits, on the home page.
+# `guests` are the guest speakers; `workshops` are the workshop conductors.
+# A group with no entries is left off the page.
+# Photos go in images/speakers/ as square JPEGs (400x400) and show in a round
+# frame; leave `photo: ""` to show the person's initials instead.
+# Bios are Markdown, so titles of books and journals can be set in *italics*.
+guests:
+  - name: "Hayley Diep"
+    role: "Picture-book author"
+    photo: "images/speakers/hayley-diep.jpg"
+    bio: >-
+      Hayley Diep writes and teaches in the Bay Area. She is the author of the
+      picture books *If You Give a Girl a Bike* and *Rising Above: The Wataru
+      “Wat” Misaka Story* (Triumph Publishers). When she isn’t writing or reading,
+      she can be found running around outdoors with her family — and, now and
+      then, stuck in or falling out of a tree.
+
+  - name: "Christopher Blackman"
+    role: "Poet"
+    photo: "images/speakers/christopher-blackman.jpg"
+    bio: >-
+      Christopher Blackman is a poet from Columbus, Ohio, who now lives outside
+      Boston. His poems have appeared in *The Kenyon Review*, *DIAGRAM*,
+      *Southeast Review*, and *Sixth Finch*. His collection *Three-Day Weekend*
+      won Gunpowder Press’s Dryden-Vreeland Book Prize, was published in 2024,
+      and was longlisted for the Massachusetts Book Awards.
+
+  - name: "Marcos Damián León"
+    role: "Writer and professor of English"
+    photo: "images/speakers/marcos-damian-leon.jpg"
+    bio: >-
+      Marcos Damián León is a writer from the Salinas Valley. He is an assistant
+      professor of English at California State University, Northridge, where he
+      teaches and researches Latine and Indigenous literature. He holds an MFA
+      from UC Riverside and a PhD from Texas Tech University, where he was a
+      Mellon Crossing Latinidades Fellow and a senior managing editor of *Iron
+      Horse Literary Review*. His writing has appeared in *Passages North*, *Taco
+      Bell Quarterly*, and the anthology *Night of Screams: Latino Horror
+      Stories*. He is at work on a gothic horror novel about farmworker
+      exploitation.
+
+workshops: []

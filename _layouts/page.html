@@ -27,5 +27,16 @@ layout: default
     <h2 class="team-heading" id="our-team">Our team</h2>
     {% include team.html %}
     {% endif %}
+
+    {%- comment -%} Each group is left off until it has someone in it. {%- endcomment -%}
+    {% if page.speakers %}
+    {%- comment -%} The page title already says who these are, so the guests
+         need no heading of their own. {%- endcomment -%}
+    {% include team.html people=site.data.speakers.guests %}
+    {% if site.data.speakers.workshops.size > 0 %}
+    <h2 class="team-heading" id="workshop-conductors">Workshop conductors</h2>
+    {% include team.html people=site.data.speakers.workshops %}
+    {% endif %}
+    {% endif %}
   </div>
 </article>

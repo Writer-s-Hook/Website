@@ -2,35 +2,41 @@ main:
   - name: "About"
     url: "/about/"
     weight: 1
+  - name: "Speakers"
+    url: "/speakers/"
+    weight: 2
   - name: "Schedule"
     url: "/#schedule"
-    weight: 2
+    weight: 3
   - name: "FAQ"
     url: "/faq/"
-    weight: 3
+    weight: 4
   - name: "Code of Conduct"
     url: "/conduct/"
-    weight: 4
+    weight: 5
   - name: "Sponsor Us"
     url: "/sponsor/"
-    weight: 6
+    weight: 7
 
 footer:
   - name: "About"
     url: "/about/"
     weight: 1
+  - name: "Speakers"
+    url: "/speakers/"
+    weight: 2
   - name: "Schedule"
     url: "/#schedule"
-    weight: 2
+    weight: 3
   - name: "FAQ"
     url: "/faq/"
-    weight: 3
+    weight: 4
   - name: "Guidelines & Code of Conduct"
     url: "/conduct/"
-    weight: 4
+    weight: 5
   - name: "AI Policy"
     url: "/ai/"
-    weight: 5
+    weight: 6
   - name: "Sponsor Us"
     url: "/sponsor/"
-    weight: 7
+    weight: 8
