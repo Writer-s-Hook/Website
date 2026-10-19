@@ -1,0 +1,37 @@
+@use "../base/variables" as *;
+
+// Closing strip on the home page: the venue, its address, and a map.
+// Text at the left, map at the right; stacked on narrow screens.
+.location-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  gap: 3rem;
+  align-items: center;
+}
+.location-venue {
+  font-family: $subhead; font-weight: 700; color: var(--ink);
+  font-size: 1.85rem; line-height: 1.25;
+  margin: .6rem 0 .5rem;
+}
+.location-address {
+  font-style: normal;
+  font-size: 1.1rem; color: var(--ink-soft);
+}
+.location-when {
+  margin: 1.2rem 0 1.8rem;
+  font-size: 1rem; line-height: 1.6;
+  color: var(--muted);
+}
+
+.location-map {
+  aspect-ratio: 16 / 10;
+  background: var(--stock);
+  border: 1px solid var(--rule);
+  overflow: hidden;
+  iframe { width: 100%; height: 100%; border: 0; display: block; }
+}
+
+@media (max-width: 720px) {
+  .location-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .location-map { aspect-ratio: 4 / 3; }
+}
