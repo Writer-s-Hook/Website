@@ -1,15 +1,20 @@
 {% comment %}
-  Team cards from _data/team.yml: name centred above, bio at the left and the
-  portrait at the right. The portrait slot is reserved whether or not there is a
-  picture yet, so adding one later will not reflow the section.
+  Person cards: name centred above, bio at the left and the portrait at the
+  right. The portrait slot is reserved whether or not there is a picture yet,
+  so adding one later will not reflow the section.
+  Lists _data/team.yml by default; pass `people=` for another list, as the
+  speakers page does. `role` is an optional line under the name, and bios are
+  run through Markdown so titles can be italicised.
 {% endcomment %}
-{% if site.data.team.size > 0 %}
+{% assign people = include.people | default: site.data.team %}
+{% if people.size > 0 %}
 <ul class="team">
-  {% for m in site.data.team %}
-  <li class="team-member">
+  {% for m in people %}
+  <li class="team-member" id="{{ m.name | slugify: "latin" }}">
     <h3 class="team-name">{{ m.name }}</h3>
+    {% if m.role and m.role != "" %}<p class="team-role">{{ m.role }}</p>{% endif %}
     <div class="team-body">
-      {% if m.bio != "" %}<p class="team-bio">{{ m.bio }}</p>{% endif %}
+      {% if m.bio != "" %}<div class="team-bio">{{ m.bio | markdownify }}</div>{% endif %}
       <div class="team-photo">
         {% if m.photo != "" %}
         <img src="{{ m.photo | relative_url }}" alt="{{ m.name }}" loading="lazy">

@@ -42,6 +42,36 @@ layout: default
 </section>
 {% endif %}
 
+{% comment %} The guests in brief: portraits and names only. The bios live on
+     /speakers/, so this stays a single row rather than a wall of text. {% endcomment %}
+{% assign guests = site.data.speakers.guests | concat: site.data.speakers.workshops %}
+{% if guests.size > 0 %}
+<section class="strip" id="speakers" aria-labelledby="speakers-label">
+  <div class="container measure-wide">
+    <p class="eyebrow" id="speakers-label">Guest speakers</p>
+    <ul class="guest-list">
+      {% for g in guests %}
+      <li class="guest">
+        <a href="{{ '/speakers/' | relative_url }}#{{ g.name | slugify: "latin" }}">
+          <span class="guest-photo">
+            {% if g.photo != "" %}
+            <img src="{{ g.photo | relative_url }}" alt="" loading="lazy">
+            {% else %}
+            {% assign parts = g.name | split: " " %}
+            <span class="team-initials" aria-hidden="true">{{ parts[0] | slice: 0 }}{{ parts[1] | slice: 0 }}</span>
+            {% endif %}
+          </span>
+          <span class="guest-name">{{ g.name }}</span>
+          {% if g.role and g.role != "" %}<span class="guest-role">{{ g.role }}</span>{% endif %}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="guest-more"><a href="{{ '/speakers/' | relative_url }}">Meet our speakers &rarr;</a></p>
+  </div>
+</section>
+{% endif %}
+
 {% if site.data.sponsors.size > 0 %}
 <section class="strip" id="sponsors" aria-labelledby="sponsors-label">
   <div class="container measure-wide">
