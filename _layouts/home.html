@@ -88,3 +88,24 @@ layout: default
     <p>Writer&rsquo;s Hook is organized and run by LearningHACK. Sponsors help fund the day.</p>
   </div>
 </section>
+
+{% comment %} Where the day happens, with a map. The details bar near the top
+     keeps its short version; this is the one to find your way by. The map
+     is a plain Google Maps embed (no API key) and loads only when scrolled to. {% endcomment %}
+{% assign place = site.event.venue | append: ", " | append: site.event.venue_address %}
+<section class="strip location" id="location" aria-labelledby="location-label">
+  <div class="container location-inner">
+    <div class="location-text">
+      <p class="eyebrow" id="location-label">Location</p>
+      <h2 class="location-venue">{{ site.event.venue }}</h2>
+      <address class="location-address">{{ site.event.venue_address }}</address>
+      <p class="location-when">{{ site.event.date }}<br>{{ site.event.time }}</p>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination={{ place | url_encode }}" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <div class="location-map">
+      <iframe src="https://www.google.com/maps?q={{ place | url_encode }}&amp;output=embed"
+              title="Map showing {{ site.event.venue }}" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
