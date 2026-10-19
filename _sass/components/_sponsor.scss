@@ -10,10 +10,21 @@
   // A row rather than equal columns: halving the width left a wide mark filling
   // its half while a compact one floated in the middle of the other.
   display: flex; flex-wrap: wrap; align-items: center;
-  gap: 1.5rem 3rem;
+  // Tight enough that four marks still share one row at desktop widths.
+  gap: 1.5rem 2rem;
   // The row sits inside .measure-wide, which caps children at 78ch - narrower
   // than the marks need, so they wrapped. Logos are not a reading measure.
   max-width: none;
+  // Transparent and unpadded on the light theme, so the marks stay flush with
+  // the label; a padded cream panel on the dark one.
+  background: var(--logo-plate);
+  border-radius: 6px;
+  padding: calc(var(--logo-inset) * .67) var(--logo-inset);
+}
+// Where the page has room either side, the panel reaches out into it so the
+// marks keep the full width and stay on one row.
+@media (min-width: 1180px) {
+  .sponsor-list { margin: 0 calc(var(--logo-inset) * -1); }
 }
 .sponsor {
   display: flex; align-items: center; justify-content: flex-start;
@@ -36,8 +47,14 @@
   img { max-width: 20rem; }
 }
 
+// Another wide wordmark (4.3:1). Capped to the Family Optometry bar's height
+// so the two wordmarks carry the same weight, and so all four fit one row.
+.sponsor--bedrock-sat-math-prep {
+  img { max-width: 13rem; }
+}
+
 @media (max-width: 640px) {
-  .sponsor-list { grid-template-columns: 1fr; }
+  .sponsor-list { grid-template-columns: 1fr; padding: calc(var(--logo-inset) * .67); }
   .sponsor { padding-left: 0; }
 }
 
