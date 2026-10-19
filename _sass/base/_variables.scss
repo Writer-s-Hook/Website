@@ -40,6 +40,8 @@
   --focus:        #17727F;
   --shadow:       rgba(16,16,18,.10);
   --chip:         #101012;
+  --logo-plate:   transparent;   // sponsor marks sit straight on cream
+  --logo-inset:   0rem;
 
   color-scheme: light;
 }
@@ -73,6 +75,10 @@
   --focus:       #6CDAE7;
   --shadow:      rgba(0,0,0,.45);
   --chip:        #2A2A30;
+  // Sponsor marks are drawn for light grounds (a brown seal, black
+  // wordmarks), so in the dark they sit on a cream panel in their own colours.
+  --logo-plate:  #F2ECDC;
+  --logo-inset:  1.5rem;    // the panel's side padding
 }
 
 // Three states, because "system" stamps no attribute at all:
