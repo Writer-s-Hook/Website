@@ -30,10 +30,9 @@ layout: default
 
     {%- comment -%} Each group is left off until it has someone in it. {%- endcomment -%}
     {% if page.speakers %}
-    {% if site.data.speakers.guests.size > 0 %}
-    <h2 class="team-heading" id="guest-speakers">Guest Speakers and Mentors</h2>
+    {%- comment -%} The page title already says who these are, so the guests
+         need no heading of their own. {%- endcomment -%}
     {% include team.html people=site.data.speakers.guests %}
-    {% endif %}
     {% if site.data.speakers.workshops.size > 0 %}
     <h2 class="team-heading" id="workshop-conductors">Workshop conductors</h2>
     {% include team.html people=site.data.speakers.workshops %}
