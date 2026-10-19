@@ -13,5 +13,10 @@
     "name": "Family Optometry of Silicon Valley",
     "logo": "images/sponsors/family-optometry.svg",
     "url":  "https://www.familyoptometrysv.net/"
+  },
+  {
+    "name": "Bedrock SAT Math Prep",
+    "logo": "images/sponsors/bedrock.png",
+    "logo_dark": "images/sponsors/bedrock-dark.png"
   }
 ]

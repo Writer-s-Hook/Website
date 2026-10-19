@@ -10,7 +10,8 @@
   // A row rather than equal columns: halving the width left a wide mark filling
   // its half while a compact one floated in the middle of the other.
   display: flex; flex-wrap: wrap; align-items: center;
-  gap: 1.5rem 3rem;
+  // Tight enough that four marks still share one row at desktop widths.
+  gap: 1.5rem 2rem;
   // The row sits inside .measure-wide, which caps children at 78ch - narrower
   // than the marks need, so they wrapped. Logos are not a reading measure.
   max-width: none;
@@ -35,6 +36,24 @@
 .sponsor--family-optometry-of-silicon-valley {
   img { max-width: 20rem; }
 }
+
+// Another wide wordmark (4.3:1). Capped to the Family Optometry bar's height
+// so the two wordmarks carry the same weight, and so all four fit one row.
+.sponsor--bedrock-sat-math-prep {
+  img { max-width: 13rem; }
+}
+
+// Marks with a dark-theme version: show the one that suits the page. Mirrors
+// the theme selectors in base/variables, so the toggle and the OS both apply.
+.sponsor-logo-dark { display: none !important; }
+@mixin sponsor-dark-logos {
+  .sponsor-logo-light { display: none !important; }
+  .sponsor-logo-dark  { display: block !important; }
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include sponsor-dark-logos; }
+}
+:root[data-theme="dark"] { @include sponsor-dark-logos; }
 
 @media (max-width: 640px) {
   .sponsor-list { grid-template-columns: 1fr; }
