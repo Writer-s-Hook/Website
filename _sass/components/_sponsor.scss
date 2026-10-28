@@ -9,9 +9,10 @@
   list-style: none; margin: 0; padding: 0;
   // A row rather than equal columns: halving the width left a wide mark filling
   // its half while a compact one floated in the middle of the other.
-  display: flex; flex-wrap: wrap; align-items: center;
-  // Tight enough that four marks still share one row at desktop widths.
-  gap: 1.5rem 2rem;
+  // Centred, and held to 56rem wide (see the padding below), so five marks
+  // settle as a row of three over a row of two rather than four and a stray.
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 1.5rem 3rem;
   // The row sits inside .measure-wide, which caps children at 78ch - narrower
   // than the marks need, so they wrapped. Logos are not a reading measure.
   max-width: none;
@@ -19,10 +20,11 @@
   // the label; a padded cream panel on the dark one.
   background: var(--logo-plate);
   border-radius: 6px;
-  padding: calc(var(--logo-inset) * .67) var(--logo-inset);
+  // The side padding also narrows the marks to 56rem on wide screens, without
+  // narrowing the dark-theme panel behind them.
+  padding: calc(var(--logo-inset) * .67) max(var(--logo-inset), calc((100% - 56rem) / 2));
 }
-// Where the page has room either side, the panel reaches out into it so the
-// marks keep the full width and stay on one row.
+// Where the page has room either side, the dark-theme panel reaches out into it.
 @media (min-width: 1180px) {
   .sponsor-list { margin: 0 calc(var(--logo-inset) * -1); }
 }
@@ -48,7 +50,7 @@
 }
 
 // Another wide wordmark (4.3:1). Capped to the Family Optometry bar's height
-// so the two wordmarks carry the same weight, and so all four fit one row.
+// so the two wordmarks carry the same weight.
 .sponsor--bedrock-sat-math-prep {
   img { max-width: 13rem; }
 }
