@@ -39,4 +39,17 @@ guests:
       Stories*. He is at work on a gothic horror novel about farmworker
       exploitation.
 
+  - name: "Emily King"
+    role: "English teacher and dance director"
+    photo: "images/speakers/emily-king.jpg"
+    bio: >-
+      Emily King is the dance director and an English and performing arts
+      teacher at Notre Dame High School in San Jose, where she teaches Creative
+      Writing and Science Fiction alongside dance and directs the Regent
+      Collective Dance Company. She holds a BFA in musical theatre from Auburn
+      University and an MA in English from Loyola Marymount University. She
+      discovered her love of the arts and literature in a high school classroom,
+      and she helps her students find their own voice, on the page and on the
+      stage.
+
 workshops: []
