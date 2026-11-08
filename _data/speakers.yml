@@ -40,16 +40,17 @@ guests:
       exploitation.
 
   - name: "Emily King"
-    role: "English teacher and dance director"
+    role: "Poet, English teacher and dance director"
     photo: "images/speakers/emily-king.jpg"
     bio: >-
-      Emily King is the dance director and an English and performing arts
+      Emily King is a poet, the dance director and an English and performing arts
       teacher at Notre Dame High School in San Jose, where she teaches Creative
       Writing and Science Fiction alongside dance and directs the Regent
       Collective Dance Company. She holds a BFA in musical theatre from Auburn
       University and an MA in English from Loyola Marymount University. She
       discovered her love of the arts and literature in a high school classroom,
       and she helps her students find their own voice, on the page and on the
-      stage.
+      stage. Her poem “Waltz at Dusk” won the Grand Prize in the [2025 San Francisco
+      Writers Conference Writing Contest](https://www.sfwriters.org/contests-and-scholarships/2025-writing-contest-finalists/).
 
 workshops: []
