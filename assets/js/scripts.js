@@ -77,7 +77,7 @@
     });
 
     // Returning to desktop width should not leave stale open state behind.
-    window.matchMedia('(min-width: 901px)').addEventListener('change', function (e) {
+    window.matchMedia('(min-width: 1001px)').addEventListener('change', function (e) {
       if (e.matches && isOpen()) setOpen(false, false);
     });
   }
