@@ -1,0 +1,19 @@
+{% comment %}
+  One card per deck from _data/decks.yml: the presenter's round photo, name and
+  session, the deck title, and a button that opens the PDF on Google Drive.
+{% endcomment %}
+{% if site.data.decks.size > 0 %}
+<ul class="decks">
+  {% for d in site.data.decks %}
+  <li class="deck">
+    <img class="deck-photo" src="{{ d.photo | relative_url }}" alt="{{ d.presenter }}" loading="lazy">
+    <div class="deck-body">
+      <p class="deck-presenter">{{ d.presenter }} <span class="deck-session">{{ d.session }}</span></p>
+      <h2 class="deck-title">{{ d.title }}</h2>
+      {% if d.subtitle %}<p class="deck-subtitle">{{ d.subtitle }}</p>{% endif %}
+      <a class="btn btn-primary deck-link" href="{{ d.url }}" target="_blank" rel="noopener">Open the slides (PDF{% if d.size %}, {{ d.size }}{% endif %}) &rarr;</a>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}

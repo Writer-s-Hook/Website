@@ -37,6 +37,9 @@ footer:
   - name: "AI Policy"
     url: "/ai/"
     weight: 6
+  - name: "Session Slides"
+    url: "/slides/"
+    weight: 7
   - name: "Sponsor Us"
     url: "/sponsor/"
     weight: 8

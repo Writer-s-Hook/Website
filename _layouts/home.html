@@ -32,6 +32,7 @@ layout: default
     </div>
     <div class="hero-actions">
       {% if site.event.register_url != "" %}<a class="btn btn-primary" href="{{ site.event.register_url }}" target="_blank" rel="noopener">Register for Free</a>{% endif %}
+      {% if site.data.decks.size > 0 %}<a class="btn btn-primary" href="{{ '/slides/' | relative_url }}">Session slides</a>{% endif %}
       <a class="btn btn-ghost" href="https://hcb.hackclub.com/donations/start/writershook" target="_blank" rel="noopener">Sponsor Us</a>
     </div>
   </div>
