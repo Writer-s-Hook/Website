@@ -32,3 +32,19 @@
   &:hover { background: transparent; color: var(--accent-on); }
   &:focus-visible { outline: 3px solid var(--accent-on); outline-offset: 3px; }
 }
+
+// Feedback band: same layout, page colors instead of turquoise, so it reads
+// as the second thing to do, not a duplicate of the submission band.
+.feedback-band {
+  background: var(--stock);
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule);
+  .submit-eyebrow { color: var(--accent-ink); }
+  .submit-title { color: var(--ink); }
+  .submit-note { color: var(--ink-soft); }
+  .submit-btn {
+    background: var(--accent); color: var(--accent-on); border-color: var(--accent);
+    &:hover { background: transparent; color: var(--accent-ink); border-color: var(--accent); }
+    &:focus-visible { outline-color: var(--accent); }
+  }
+}

@@ -25,6 +25,8 @@ event:
   register_url: ''
   submit_url: 'https://forms.gle/dSPh1JzXTdf6CmsG7'
   submit_deadline: '3:00 PM'
+  # Post-event feedback form. Set to '' to hide the home page band and footer link.
+  feedback_url: 'https://forms.gle/mdxkG1cQPjbuPRwJ6'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
