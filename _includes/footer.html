@@ -19,6 +19,9 @@
         {% for item in items %}
         <li><a href="{{ item.url | relative_url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.name }}</a></li>
         {% endfor %}
+        {% if site.event.feedback_url and site.event.feedback_url != "" %}
+        <li><a href="{{ site.event.feedback_url }}" target="_blank" rel="noopener">Feedback Form</a></li>
+        {% endif %}
       </ul>
     </nav>
   </div>
