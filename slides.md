@@ -6,8 +6,8 @@ permalink: "/slides/"
 eyebrow: Session Slides
 headline: Slides from today’s sessions
 standfirst: >-
-  Missed a slide or want to look back at a talk? Every presenter’s deck is here
-  as a PDF.
+  Start with the competition guide, then find every presenter’s deck below.
+  All of them are PDFs.
 description: >-
   Slide decks from the Writer's Hook guest speakers and sessions, as PDFs.
 ---
