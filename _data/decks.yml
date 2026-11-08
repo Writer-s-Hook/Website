@@ -1,11 +1,13 @@
 # Presenters' slide decks, shown on /slides/ in session order.
-# `url` is a public Google Drive link to the PDF; `photo` reuses the
-# presenter's picture from the team or speakers section.
+# `pdf` is the deck hosted on this site (put the file in assets/slides/).
+# `drive_url` is the original on Google Drive, kept as a backup and not shown.
+# `photo` reuses the presenter's picture from the team or speakers section.
 - presenter: "Hayley Diep"
   photo: "images/speakers/hayley-diep.jpg"
   session: "Guest speaker · 8:45 AM"
   title: "My Writing Journey"
-  url: "https://drive.google.com/file/d/19owpUm3cpH2jF9Vtk29puLUCwrmV9MZY/view?usp=sharing"
+  pdf: "assets/slides/hayley-diep-my-writing-journey.pdf"
+  drive_url: "https://drive.google.com/file/d/19owpUm3cpH2jF9Vtk29puLUCwrmV9MZY/view?usp=sharing"
   size: "3.1 MB"
 
 - presenter: "Alisha Shetty"
@@ -13,5 +15,6 @@
   session: "Advice session · 9:30 AM"
   title: "Summer Writing Programs"
   subtitle: "How to choose a program, write a strong application, and keep growing if you don’t get in"
-  url: "https://drive.google.com/file/d/1EXjvNbD9pfKY2wiBhyFRO-Q2cxyi7LiN/view?usp=sharing"
-  size: "141 KB"
+  pdf: "assets/slides/alisha-shetty-summer-writing-programs.pdf"
+  drive_url: "https://drive.google.com/file/d/1EXjvNbD9pfKY2wiBhyFRO-Q2cxyi7LiN/view?usp=sharing"
+  size: "140 KB"
