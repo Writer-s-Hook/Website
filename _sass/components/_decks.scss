@@ -1,8 +1,13 @@
 @use "../base/variables" as *;
 
-// /slides/: one row per deck, photo at the left, title and link at the right.
+// /slides/: the competition guide on a dark band first, then one row per deck, photo at the left, title and link at the right.
+.decks-heading {
+  margin: 3rem 0 0;
+  font-family: $subhead; font-weight: 700; font-size: .85rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
+}
 .decks {
-  list-style: none; padding: 0; margin: 2.2rem 0 0;
+  list-style: none; padding: 0; margin: 1.2rem 0 0;
   display: flex; flex-direction: column; gap: 1.4rem;
   max-width: none;
 }
@@ -51,4 +56,43 @@
   .deck { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1.3rem; }
   .deck-photo { width: 5.5rem; height: 5.5rem; }
   .deck-session { display: block; margin: .15rem 0 0; }
+}
+
+// The competition guide is for everyone, not one speaker's talk, so it sits
+// on the dark band (like the header and hero) with its cover in place of a photo.
+.guide-card {
+  @include on-band;
+  margin-top: 2.2rem; max-width: none;
+  display: grid; grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+  align-items: center; gap: 2rem;
+  padding: 1.8rem;
+  border-radius: 10px;
+  border-left: 6px solid var(--accent);
+}
+.guide-cover {
+  display: block;
+  img {
+    display: block; width: 100%; height: auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .45);
+  }
+}
+.guide-body { display: flex; flex-direction: column; gap: .5rem; min-width: 0; }
+.guide-eyebrow {
+  margin: 0;
+  font-family: $subhead; font-weight: 700; font-size: .8rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--accent);
+}
+.guide-title {
+  margin: 0;
+  font-family: $display; font-weight: 400;
+  font-size: 2.6rem; line-height: 1.1; color: var(--ink);
+}
+.guide-summary { margin: 0; font-size: 1.02rem; color: var(--ink-soft); }
+.guide-link { white-space: nowrap; background: var(--accent); color: var(--accent-on); border-color: var(--accent); }
+.guide-link:hover { background: transparent; color: var(--accent); }
+
+@media (max-width: 600px) {
+  .guide-card { grid-template-columns: 1fr; gap: 1.2rem; padding: 1.3rem; }
+  .guide-title { font-size: 2.2rem; }
 }

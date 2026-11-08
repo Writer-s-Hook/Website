@@ -1,0 +1,10 @@
+# The competition guide, featured above the presenters' decks on /slides/.
+# It isn't tied to a speaker, so it gets its own card with a cover image.
+title: "Competition Rules and Guide"
+eyebrow: "For every participant"
+summary: >-
+  Everything for the writing contest in one place: the theme, length,
+  formatting, judging criteria, prizes, rules, and how to submit by 3:00&nbsp;PM.
+pdf: "assets/slides/writers-hook-competition-guide.pdf"
+cover: "images/slides/competition-guide-cover.jpg"
+size: "150 KB"

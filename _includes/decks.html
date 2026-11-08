@@ -1,8 +1,28 @@
 {% comment %}
+  The competition guide from _data/guide.yml comes first, as a featured card.
   One card per deck from _data/decks.yml: the presenter's round photo, name and
   session, the deck title, and a button that opens the PDF hosted on this site, plus a Download link.
 {% endcomment %}
+{% assign g = site.data.guide %}
+{% if g.pdf %}
+{% assign gpdf = g.pdf | relative_url %}
+<section class="guide-card" aria-labelledby="guide-title">
+  <a class="guide-cover" href="{{ gpdf }}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+    <img src="{{ g.cover | relative_url }}" alt="" width="720" height="405" loading="lazy">
+  </a>
+  <div class="guide-body">
+    <p class="guide-eyebrow">{{ g.eyebrow }}</p>
+    <h2 class="guide-title" id="guide-title">{{ g.title }}</h2>
+    <p class="guide-summary">{{ g.summary }}</p>
+    <div class="deck-actions">
+      <a class="btn guide-link" href="{{ gpdf }}" target="_blank" rel="noopener">Read the guide (PDF) &rarr;</a>
+      <a class="deck-download" href="{{ gpdf }}" download>Download</a>
+    </div>
+  </div>
+</section>
+{% endif %}
 {% if site.data.decks.size > 0 %}
+<h2 class="decks-heading">Presenters&rsquo; slides</h2>
 <ul class="decks">
   {% for d in site.data.decks %}
   <li class="deck">
