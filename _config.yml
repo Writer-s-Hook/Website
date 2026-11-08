@@ -21,7 +21,10 @@ event:
   venue_address: '26379 Fremont Road, Los Altos Hills, CA'
   eligibility: 'Ages 13–18, all backgrounds'
   cost: '100% free — meals, snacks, and prizes included'
-  register_url: 'https://docs.google.com/forms/d/e/1FAIpQLScU_Buj78Q2T8Y52fK_kyhmoDv9XX42cMLXrxLU8nBjMGbnng/viewform'
+  # Registration is closed. Put the form URL back here to show the Register buttons again.
+  register_url: ''
+  submit_url: 'https://forms.gle/dSPh1JzXTdf6CmsG7'
+  submit_deadline: '3:00 PM'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
