@@ -1,0 +1,34 @@
+@use "../base/variables" as *;
+
+// Submission call to action under the hero: the one turquoise band on the
+// page, so it reads as the thing to do today.
+.submit-band {
+  background: var(--accent);
+  color: var(--accent-on);
+  border-bottom: 1px solid var(--band-edge);
+}
+.submit-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1.2rem 2.5rem;
+  padding-block: 2.2rem;
+}
+.submit-text { display: flex; flex-direction: column; gap: .35rem; min-width: 0; }
+.submit-eyebrow {
+  margin: 0;
+  font-family: $subhead; font-weight: 700; font-size: .82rem;
+  letter-spacing: .14em; text-transform: uppercase;
+}
+.submit-title {
+  margin: 0;
+  font-family: $subhead; font-weight: 700;
+  font-size: clamp(1.6rem, 3.6vw, 2.2rem); line-height: 1.15;
+  color: var(--accent-on);
+}
+.submit-note { margin: 0; font-size: 1.05rem; }
+.submit-btn {
+  background: var(--accent-on); color: var(--accent);
+  border-color: var(--accent-on);
+  font-size: 1.1rem; padding: 1rem 1.8rem;
+  &:hover { background: transparent; color: var(--accent-on); }
+  &:focus-visible { outline: 3px solid var(--accent-on); outline-offset: 3px; }
+}

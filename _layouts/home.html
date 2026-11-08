@@ -6,6 +6,22 @@ layout: default
      event facts, and the running order. About, tracks, and the FAQ are owned by
      their sub-pages and are reached through the nav and the footer. -->
 
+{% comment %} Event-day call to action: the submission form and its deadline,
+     first thing under the header so no participant has to look for it.
+     Set site.event.submit_url to "" to hide it. {% endcomment %}
+{% if site.event.submit_url and site.event.submit_url != "" %}
+<section class="submit-band" aria-labelledby="submit-title">
+  <div class="container submit-inner">
+    <div class="submit-text">
+      <p class="submit-eyebrow">Writing submissions</p>
+      <h2 class="submit-title" id="submit-title">Submit your piece by {{ site.event.submit_deadline | replace: " ", "&nbsp;" }}</h2>
+      <p class="submit-note">Submissions close at {{ site.event.submit_deadline }} on {{ site.event.date }}.</p>
+    </div>
+    <a class="btn submit-btn" href="{{ site.event.submit_url }}" target="_blank" rel="noopener">Submit your writing &rarr;</a>
+  </div>
+</section>
+{% endif %}
+
 <section class="hero">
   <div class="container hero-inner">
     <p class="eyebrow">{{ site.event.date_short }} &middot; {{ site.event.venue }} &middot; Free</p>

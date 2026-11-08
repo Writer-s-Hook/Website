@@ -22,6 +22,8 @@ event:
   eligibility: 'Ages 13–18, all backgrounds'
   cost: '100% free — meals, snacks, and prizes included'
   register_url: 'https://docs.google.com/forms/d/e/1FAIpQLScU_Buj78Q2T8Y52fK_kyhmoDv9XX42cMLXrxLU8nBjMGbnng/viewform'
+  submit_url: 'https://forms.gle/dSPh1JzXTdf6CmsG7'
+  submit_deadline: '3:00 PM'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
