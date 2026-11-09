@@ -23,7 +23,9 @@ event:
   cost: '100% free — meals, snacks, and prizes included'
   # Registration is closed. Put the form URL back here to show the Register buttons again.
   register_url: ''
-  submit_url: 'https://forms.gle/dSPh1JzXTdf6CmsG7'
+  # Submissions closed at 3:00 PM. Put the form URL back here to show the submit band again
+  # (it was https://forms.gle/dSPh1JzXTdf6CmsG7).
+  submit_url: ''
   submit_deadline: '3:00 PM'
   # Post-event feedback form. Set to '' to hide the home page band and footer link.
   feedback_url: 'https://forms.gle/mdxkG1cQPjbuPRwJ6'
