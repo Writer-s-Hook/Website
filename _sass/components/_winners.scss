@@ -6,6 +6,17 @@
 // use the site's script display face.
 $reading: "Literata", Georgia, "Times New Roman", serif;
 
+// This page is a showcase, not running text, so it uses the site's full
+// content width (the header's 1120px) instead of the 880px page column, and
+// lets the band and cards run past the 62ch reading measure. The headline
+// and standfirst keep their readable widths.
+.page-winners {
+  .page-body .container { max-width: 1120px; }
+  .measure > .theme-band,
+  .measure > .podium,
+  .measure > .winners-thanks { max-width: none; }
+}
+
 // --- theme band ------------------------------------------------------------
 .theme-band {
   @include on-band;
@@ -109,6 +120,20 @@ $reading: "Literata", Georgia, "Times New Roman", serif;
   margin: 2.6rem 0 0;
   font-size: 1.15rem; line-height: 1.6; color: var(--ink-soft);
   text-align: center;
+}
+
+// Wide screens: first place is a tall card on the left, with second and third
+// stacked beside it, so the whole podium reads in one glance.
+@media (min-width: 900px) {
+  .podium { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: 1.4rem; }
+  .podium-card--first {
+    grid-column: 1; grid-row: 1 / span 2;
+    padding: 3rem 3rem 2.8rem;
+    .podium-numeral { font-size: 24rem; top: -4.4rem; right: 2.4rem; }
+    .podium-title { font-size: 3.4rem; }
+  }
+  .theme-band { padding: 3rem 3rem 2.8rem; }
+  .theme-word { font-size: 9rem; }
 }
 
 @media (max-width: 640px) {

@@ -3,6 +3,7 @@ title: Winners
 layout: page
 winners: true
 reading_font: true
+bodyClass: page-winners
 permalink: "/winners/"
 eyebrow: Competition Winners
 headline: Our winners
