@@ -22,21 +22,6 @@ layout: default
 </section>
 {% endif %}
 
-{% comment %} Feedback form: a quieter cream band under the submission band, so
-     the two calls to action don't compete. Set site.event.feedback_url to "" to hide it. {% endcomment %}
-{% if site.event.feedback_url and site.event.feedback_url != "" %}
-<section class="submit-band feedback-band" aria-labelledby="feedback-title">
-  <div class="container submit-inner">
-    <div class="submit-text">
-      <p class="submit-eyebrow">Feedback</p>
-      <h2 class="submit-title" id="feedback-title">How was your day at Writer&rsquo;s Hook?</h2>
-      <p class="submit-note">Tell us in about 4 minutes. Your answers are anonymous and help us plan next year.</p>
-    </div>
-    <a class="btn submit-btn" href="{{ site.event.feedback_url }}" target="_blank" rel="noopener">Share your feedback &rarr;</a>
-  </div>
-</section>
-{% endif %}
-
 <section class="hero">
   <div class="container hero-inner">
     <p class="eyebrow">{{ site.event.date_short }} &middot; {{ site.event.venue }} &middot; Free</p>
@@ -46,6 +31,7 @@ layout: default
       {% if page.dek_detail %}<p class="hero-dek-detail">{{ page.dek_detail }}</p>{% endif %}
     </div>
     <div class="hero-actions">
+      {% if site.winners.size > 0 %}<a class="btn btn-primary" href="{{ '/winners/' | relative_url }}">Winners</a>{% endif %}
       {% if site.event.register_url != "" %}<a class="btn btn-primary" href="{{ site.event.register_url }}" target="_blank" rel="noopener">Register for Free</a>{% endif %}
       {% if site.data.decks.size > 0 %}<a class="btn btn-primary" href="{{ '/slides/' | relative_url }}">Session slides</a>{% endif %}
     </div>
