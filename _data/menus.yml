@@ -2,43 +2,20 @@ main:
   - name: "About"
     url: "/about/"
     weight: 1
+  - name: "Winners"
+    url: "/winners/"
+    weight: 2
   - name: "Speakers"
     url: "/speakers/"
-    weight: 2
+    weight: 3
   - name: "Schedule"
     url: "/#schedule"
-    weight: 3
+    weight: 4
   - name: "FAQ"
     url: "/faq/"
-    weight: 4
+    weight: 5
   - name: "Code of Conduct"
     url: "/conduct/"
-    weight: 5
-  - name: "Session Slides"
-    url: "/slides/"
-    weight: 6
-  - name: "Sponsor Us"
-    url: "/sponsor/"
-    weight: 7
-
-footer:
-  - name: "About"
-    url: "/about/"
-    weight: 1
-  - name: "Speakers"
-    url: "/speakers/"
-    weight: 2
-  - name: "Schedule"
-    url: "/#schedule"
-    weight: 3
-  - name: "FAQ"
-    url: "/faq/"
-    weight: 4
-  - name: "Guidelines & Code of Conduct"
-    url: "/conduct/"
-    weight: 5
-  - name: "AI Policy"
-    url: "/ai/"
     weight: 6
   - name: "Session Slides"
     url: "/slides/"
@@ -46,3 +23,32 @@ footer:
   - name: "Sponsor Us"
     url: "/sponsor/"
     weight: 8
+
+footer:
+  - name: "About"
+    url: "/about/"
+    weight: 1
+  - name: "Winners"
+    url: "/winners/"
+    weight: 2
+  - name: "Speakers"
+    url: "/speakers/"
+    weight: 3
+  - name: "Schedule"
+    url: "/#schedule"
+    weight: 4
+  - name: "FAQ"
+    url: "/faq/"
+    weight: 5
+  - name: "Guidelines & Code of Conduct"
+    url: "/conduct/"
+    weight: 6
+  - name: "AI Policy"
+    url: "/ai/"
+    weight: 7
+  - name: "Session Slides"
+    url: "/slides/"
+    weight: 8
+  - name: "Sponsor Us"
+    url: "/sponsor/"
+    weight: 9

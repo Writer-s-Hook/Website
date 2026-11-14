@@ -41,6 +41,10 @@ logo:
 collections:
   team:
     output: true
+  # The competition's winning stories, one file each, shown in full on /winners/.
+  # They have no pages of their own: winners.md lists them by `place`.
+  winners:
+    output: false
 
 defaults:
   - scope: { path: "", type: "team" }
