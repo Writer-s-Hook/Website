@@ -1,16 +1,31 @@
 {% comment %}
-  /winners/: the three winners of the free-writing competition, from the
-  _winners collection, in order of `place`. Each card shows the place, title,
-  author, school and a short summary. The stories themselves are not published.
+  /winners/: the competition's theme on a dark band, then the winners from the
+  _winners collection: first place as a large featured card, second and third
+  side by side. The theme, entry count and award date come from winners.md.
+  The stories themselves are not published.
 {% endcomment %}
 {% assign stories = site.winners | sort: "place" %}
-<ol class="winners">
+
+<section class="theme-band" aria-label="Competition theme">
+  <p class="theme-label">This year&rsquo;s theme</p>
+  <p class="theme-word">{{ page.theme }}</p>
+  <ul class="theme-stats">
+    <li><strong>{{ page.entries }}</strong> writers entered</li>
+    <li><strong>{{ stories.size }}</strong> winners</li>
+  </ul>
+  <p class="theme-date">Awarded {{ page.awarded }}</p>
+</section>
+
+<div class="podium">
   {% for w in stories %}
-  <li class="winner{% if w.place == 1 %} winner--first{% endif %}" id="{{ w.anchor }}">
-    <p class="winner-place"><span class="winner-rank" aria-hidden="true">{{ w.place }}</span>{{ w.prize }}</p>
-    <h2 class="winner-title">{{ w.title }}</h2>
-    <p class="winner-byline">by <strong>{{ w.author }}</strong>, {{ w.school }}</p>
-    {% if w.summary %}<p class="winner-summary">{{ w.summary }}</p>{% endif %}
-  </li>
+  <article class="podium-card{% if w.place == 1 %} podium-card--first{% endif %}" id="{{ w.anchor }}" aria-labelledby="{{ w.anchor }}-title">
+    <span class="podium-numeral" aria-hidden="true">{{ w.place }}</span>
+    <p class="podium-place">{{ w.prize }}</p>
+    <h2 class="podium-title" id="{{ w.anchor }}-title">{{ w.title }}</h2>
+    <p class="podium-author">{{ w.author }}</p>
+    <p class="podium-school">{{ w.school }}</p>
+  </article>
   {% endfor %}
-</ol>
+</div>
+
+<p class="winners-thanks">Thank you to all {{ page.entries }} writers who shared their work with us.</p>

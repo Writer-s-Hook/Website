@@ -1,52 +1,120 @@
 @use "../base/variables" as *;
 
-// /winners/: one card per winner with the place, title, author, school and a
-// short summary. Titles and summaries are set in Literata, a face made for reading.
+// /winners/: the theme on a dark band, then a podium of cards. First place is
+// a large featured card spanning the row; second and third sit side by side.
+// Story titles are set in Literata; the theme word and the big place numerals
+// use the site's script display face.
 $reading: "Literata", Georgia, "Times New Roman", serif;
 
-.winners {
-  list-style: none; padding: 0; margin: 0;
-  display: flex; flex-direction: column; gap: 1.4rem;
-}
-.winner {
-  padding: 2rem 2.2rem 2.2rem;
-  background: var(--stock);
-  border: 1px solid var(--rule);
-  border-radius: 10px;
-  scroll-margin-top: 6.5rem;   // clears the sticky header on a #anchor link
-}
-.winner--first {
+// --- theme band ------------------------------------------------------------
+.theme-band {
   @include on-band;
-  border-color: transparent;
+  position: relative; overflow: hidden;
+  margin: 0 0 2.4rem;
+  padding: 2.6rem 2.4rem 2.4rem;
+  border-radius: 12px;
+  text-align: center;
+  // a soft turquoise glow behind the theme word
+  background:
+    radial-gradient(ellipse 60% 70% at 50% 45%, rgba(108,218,231,.16), transparent 70%),
+    var(--band);
 }
-.winner-place {
-  display: flex; align-items: center; gap: .75rem;
-  margin: 0 0 .9rem;
+.theme-label {
+  margin: 0;
   font-family: $subhead; font-weight: 700; font-size: .85rem;
-  letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink);
+  letter-spacing: .2em; text-transform: uppercase; color: var(--accent);
 }
-.winner-rank {
-  display: inline-flex; align-items: center; justify-content: center;
-  width: 2.1rem; height: 2.1rem; border-radius: 50%;
-  background: var(--accent); color: var(--accent-on);
-  font-family: $reading; font-size: 1.05rem; letter-spacing: 0;
+.theme-word {
+  margin: .1rem 0 .6rem;
+  font-family: $display; font-weight: 400;
+  font-size: clamp(4.5rem, 14vw, 8rem); line-height: 1.05;
+  color: var(--band-fg);
 }
-.winner-title {
-  margin: 0 0 .45rem;
-  font-family: $reading; font-weight: 600;
-  font-size: clamp(1.7rem, 4vw, 2.3rem); line-height: 1.15; color: var(--ink);
-  text-wrap: balance;
+.theme-stats {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem 1.6rem;
+  font-family: $subhead; font-size: 1.05rem; color: var(--band-soft);
+  li + li::before { content: "·"; margin-right: 1.6rem; color: var(--accent); }
+  strong { color: var(--accent); font-size: 1.2rem; }
 }
-.winner-byline {
-  margin: 0 0 1.1rem;
-  font-family: $subhead; font-size: 1.05rem; color: var(--ink-soft);
-  strong { color: var(--ink); }
-}
-.winner-summary {
-  margin: 0; max-width: 60ch;
-  font-family: $reading; font-size: 1.15rem; line-height: 1.7; color: var(--ink);
+.theme-date {
+  margin: .5rem 0 0;
+  font-family: $subhead; font-size: .95rem; letter-spacing: .04em; color: var(--band-soft);
 }
 
-@media (max-width: 600px) {
-  .winner { padding: 1.5rem 1.4rem 1.7rem; }
+// --- podium --------------------------------------------------------------
+.podium {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem;
+}
+.podium-card {
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+  min-height: 15rem;
+  padding: 2rem 2rem 1.8rem;
+  background: var(--stock);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  scroll-margin-top: 6.5rem;   // clears the sticky header on a #anchor link
+}
+// The place number, huge and faint, in the card's empty top-right corner,
+// clear of the title block at the bottom.
+.podium-numeral {
+  position: absolute; right: .8rem; top: -1.8rem;
+  font-family: $display; font-weight: 400;
+  font-size: 9.5rem; line-height: 1;
+  color: var(--accent-ink); opacity: .14;
+  pointer-events: none; user-select: none;
+}
+.podium-place {
+  position: relative;
+  margin: 0 0 auto;   // pushes the title block to the bottom of the card
+  padding-bottom: 1.6rem;
+  font-family: $subhead; font-weight: 700; font-size: .85rem;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--accent-ink);
+}
+.podium-title {
+  position: relative;
+  margin: 0 0 .7rem;
+  font-family: $reading; font-weight: 600;
+  font-size: clamp(1.6rem, 3.6vw, 2rem); line-height: 1.15; color: var(--ink);
+  text-wrap: balance;
+}
+.podium-author {
+  position: relative; margin: 0;
+  font-family: $subhead; font-weight: 700; font-size: 1.1rem; color: var(--ink);
+}
+.podium-school {
+  position: relative; margin: .15rem 0 0;
+  font-size: 1rem; color: var(--muted);
+}
+
+// First place: the whole row, on the dark band, with everything a size up.
+.podium-card--first {
+  @include on-band;
+  grid-column: 1 / -1;
+  min-height: 19rem;
+  padding: 2.6rem 2.6rem 2.4rem;
+  border-color: transparent;
+  background:
+    radial-gradient(ellipse 55% 80% at 85% 90%, rgba(108,218,231,.14), transparent 70%),
+    var(--band);
+  .podium-numeral { font-size: 19rem; top: -3.4rem; right: 2.4rem; color: var(--accent); opacity: .22; }
+  .podium-place { font-size: .95rem; }
+  .podium-title { font-size: clamp(2.2rem, 6vw, 3.2rem); max-width: 16ch; }
+  .podium-author { font-size: 1.3rem; }
+  .podium-school { font-size: 1.1rem; }
+}
+
+.winners-thanks {
+  margin: 2.6rem 0 0;
+  font-size: 1.15rem; line-height: 1.6; color: var(--ink-soft);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .theme-band { padding: 2rem 1.4rem; }
+  .podium { grid-template-columns: 1fr; }
+  .podium-card { min-height: 12rem; padding: 1.6rem 1.5rem 1.5rem; }
+  .podium-card--first { min-height: 15rem; padding: 2rem 1.6rem; }
+  .podium-card--first .podium-numeral { font-size: 14rem; top: -2.6rem; right: 1.2rem; }
 }
