@@ -33,7 +33,7 @@ layout: default
     <div class="hero-actions">
       {% if site.winners.size > 0 %}<a class="btn btn-primary" href="{{ '/winners/' | relative_url }}">Winners</a>{% endif %}
       {% if site.event.register_url != "" %}<a class="btn btn-primary" href="{{ site.event.register_url }}" target="_blank" rel="noopener">Register for Free</a>{% endif %}
-      {% if site.data.decks.size > 0 %}<a class="btn btn-primary" href="{{ '/slides/' | relative_url }}">Session slides</a>{% endif %}
+      {% if site.data.decks.size > 0 %}<a class="btn btn-ghost" href="{{ '/slides/' | relative_url }}">Session slides</a>{% endif %}
     </div>
   </div>
 </section>
