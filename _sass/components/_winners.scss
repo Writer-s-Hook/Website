@@ -1,7 +1,7 @@
 @use "../base/variables" as *;
 
 // /winners/: one card per winner with the place, title, author, school and a
-// short blurb. Titles and blurbs are set in Literata, a face made for reading.
+// short summary. Titles and summaries are set in Literata, a face made for reading.
 $reading: "Literata", Georgia, "Times New Roman", serif;
 
 .winners {
@@ -42,7 +42,7 @@ $reading: "Literata", Georgia, "Times New Roman", serif;
   font-family: $subhead; font-size: 1.05rem; color: var(--ink-soft);
   strong { color: var(--ink); }
 }
-.winner-blurb {
+.winner-summary {
   margin: 0; max-width: 60ch;
   font-family: $reading; font-size: 1.15rem; line-height: 1.7; color: var(--ink);
 }

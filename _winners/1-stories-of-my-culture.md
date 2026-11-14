@@ -5,9 +5,12 @@ school: "Presentation High School"
 place: 1
 prize: "First place"
 anchor: "stories-of-my-culture"
-blurb: >-
-  Home for an afternoon of making dumplings with her mother and aunties, Emily
-  works up the courage to share two truths she has been keeping: she has left
-  medical school to write, and she is a lesbian. A story about family
-  expectations, and about the love that holds when they break.
+summary: >-
+  Emily comes home to help her mother and aunties fold dumplings. At the
+  table she tells them two things she has kept to herself: she has quit
+  medical school for a writing program, and she is a lesbian. Her aunties
+  answer with criticism and disbelief, reminding her of everything the family
+  sacrificed for her to become a doctor. Her mother, quiet at first, finally
+  stands up for her, and asks Emily to tell her about the program and the girl
+  she loves.
 ---

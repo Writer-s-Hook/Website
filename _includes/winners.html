@@ -1,7 +1,7 @@
 {% comment %}
   /winners/: the three winners of the free-writing competition, from the
   _winners collection, in order of `place`. Each card shows the place, title,
-  author, school and a short blurb. The stories themselves are not published.
+  author, school and a short summary. The stories themselves are not published.
 {% endcomment %}
 {% assign stories = site.winners | sort: "place" %}
 <ol class="winners">
@@ -10,7 +10,7 @@
     <p class="winner-place"><span class="winner-rank" aria-hidden="true">{{ w.place }}</span>{{ w.prize }}</p>
     <h2 class="winner-title">{{ w.title }}</h2>
     <p class="winner-byline">by <strong>{{ w.author }}</strong>, {{ w.school }}</p>
-    {% if w.blurb %}<p class="winner-blurb">{{ w.blurb }}</p>{% endif %}
+    {% if w.summary %}<p class="winner-summary">{{ w.summary }}</p>{% endif %}
   </li>
   {% endfor %}
 </ol>
