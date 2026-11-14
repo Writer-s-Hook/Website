@@ -55,8 +55,6 @@ $reading: "Literata", Georgia, "Times New Roman", serif;
   font-family: $subhead; font-size: 1.1rem; color: var(--ink-soft);
   strong { color: var(--ink); }
 }
-.story-meta { margin: 0; font-size: .95rem; color: var(--muted); }
-.story-note { font-style: italic; }
 
 // The reading column: a comfortable 65-character measure, generous leading,
 // and space between paragraphs rather than indents, which reads better on screens.

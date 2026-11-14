@@ -21,7 +21,6 @@
     <p class="story-place">{{ w.prize }}</p>
     <h2 class="story-title" id="{{ w.anchor }}-title">{{ w.title }}</h2>
     <p class="story-byline">by <strong>{{ w.author }}</strong>, {{ w.school }}</p>
-    <p class="story-meta">{{ w.words }} words{% if w.content_note %} &middot; <span class="story-note">Content note: {{ w.content_note }}</span>{% endif %}</p>
   </header>
   <div class="story-body">
     {{ w.content | markdownify }}
