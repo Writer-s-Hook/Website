@@ -1,0 +1,30 @@
+{% comment %}
+  /winners/: the three winning stories of the free-writing competition, from the
+  _winners collection, in order of `place`. First a row of cards that jump to each
+  story, then every story in full, set in Literata for long-form reading.
+{% endcomment %}
+{% assign stories = site.winners | sort: "place" %}
+<nav class="winner-cards" aria-label="Winning stories">
+  {% for w in stories %}
+  <a class="winner-card{% if w.place == 1 %} winner-card--first{% endif %}" href="#{{ w.anchor }}">
+    <span class="winner-place">{{ w.prize }}</span>
+    <span class="winner-title">{{ w.title }}</span>
+    <span class="winner-author">{{ w.author }}</span>
+    <span class="winner-school">{{ w.school }}</span>
+  </a>
+  {% endfor %}
+</nav>
+
+{% for w in stories %}
+<article class="story" id="{{ w.anchor }}" aria-labelledby="{{ w.anchor }}-title">
+  <header class="story-head">
+    <p class="story-place">{{ w.prize }}</p>
+    <h2 class="story-title" id="{{ w.anchor }}-title">{{ w.title }}</h2>
+    <p class="story-byline">by <strong>{{ w.author }}</strong>, {{ w.school }}</p>
+  </header>
+  <div class="story-body">
+    {{ w.content | markdownify }}
+  </div>
+  <p class="story-end"><a href="#main">Back to the top</a></p>
+</article>
+{% endfor %}

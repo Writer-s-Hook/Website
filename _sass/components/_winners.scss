@@ -1,0 +1,79 @@
+@use "../base/variables" as *;
+
+// /winners/: cards that jump to each story, then the stories in full.
+// The stories are long-form reading, so they get their own face and measure.
+$reading: "Literata", Georgia, "Times New Roman", serif;
+
+.winner-cards {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem;
+  margin: 0 0 3.5rem;
+}
+.winner-card {
+  display: flex; flex-direction: column; gap: .35rem;
+  padding: 1.3rem 1.4rem;
+  background: var(--stock);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  color: var(--ink); text-decoration: none;
+  transition: border-color .15s ease, transform .15s ease;
+  &:hover, &:focus-visible { border-color: var(--accent-ink); transform: translateY(-2px); }
+}
+.winner-card--first {
+  @include on-band;
+  border-color: transparent;
+}
+.winner-place {
+  font-family: $subhead; font-weight: 700; font-size: .8rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink);
+}
+.winner-title {
+  font-family: $reading; font-weight: 600; font-size: 1.3rem; line-height: 1.25;
+  margin-top: .2rem;
+}
+.winner-author { font-family: $subhead; font-weight: 700; font-size: 1rem; }
+.winner-school { font-size: .95rem; color: var(--muted); }
+
+.story {
+  padding: 3rem 0 2.5rem;
+  border-top: 1px solid var(--rule);
+  scroll-margin-top: 6.5rem;   // clears the sticky header when a card jumps here
+}
+.story-head { margin: 0 0 2.2rem; }
+.story-place {
+  margin: 0 0 .5rem;
+  font-family: $subhead; font-weight: 700; font-size: .85rem;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink);
+}
+.story-title {
+  margin: 0 0 .6rem;
+  font-family: $reading; font-weight: 600;
+  font-size: clamp(2rem, 5vw, 2.8rem); line-height: 1.15; color: var(--ink);
+  text-wrap: balance;
+}
+.story-byline {
+  margin: 0 0 .35rem;
+  font-family: $subhead; font-size: 1.1rem; color: var(--ink-soft);
+  strong { color: var(--ink); }
+}
+
+// The reading column: a comfortable 65-character measure, generous leading,
+// and space between paragraphs rather than indents, which reads better on screens.
+.story-body {
+  max-width: 65ch;
+  font-family: $reading;
+  font-size: 1.2rem; line-height: 1.75;
+  color: var(--ink);
+  font-optical-sizing: auto;
+  hanging-punctuation: first;
+  p { margin: 0 0 1.15em; }
+}
+.story-end {
+  margin: 1.5rem 0 0;
+  font-family: $subhead; font-weight: 700; font-size: .95rem;
+  a { color: var(--accent-ink); text-underline-offset: .2em; }
+}
+
+@media (max-width: 700px) {
+  .winner-cards { grid-template-columns: 1fr; }
+  .story-body { font-size: 1.1rem; line-height: 1.7; }
+}
