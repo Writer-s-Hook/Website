@@ -5,13 +5,13 @@ school: "Hillbrook Upper School"
 place: 2
 prize: "Second place"
 anchor: "the-uprising"
-words: 747
+words: 746
 content_note: "violence, child abuse, the execution of a child"
 ---
 
 Sweat beaded on the temple of Reverend Bradshaw as he hurried to latch the lock on the basement door. The parsonage groaned with the sounds of stretching wood, and the Reverend slumped against the unfinished walls. The Broughton winter burrowed beneath his skin, even under all this soil.
 
-Broughton was a quiet settlement north of Lake George. Before he was born, James Bradshaw’s parents were born in Lancashire and among the first to arrive in the New World. Though they landed in Massachusetts, it was he, with his congregation of fifty, that ventured up to Vermont. Bordering the discovered land of the Americas, Broughton liked to think of itself as a soldier in the holy quest of purifying the uncharted west. They fought the savage Indians, toughed out unknowable lands, and had since grown to almost two hundred.
+Broughton was a quiet settlement north of Lake George. Before he was born, James Bradshaw’s parents were born in Lancashire and among the first to arrive in the New World. Though they landed in Massachusetts, it was he, with his congregation of fifty, that ventured up to Vermont. Bordering the discovered land of the Americas, Broughton liked to think of itself as a soldier in the holy quest of purifying the uncharted west. They fought the savage Indians, toughed unknowable lands, and had since grown to almost two hundred.
 
 Out of nowhere, the earth seemed to breathe. Bradshaw turned the knife in his hand, and muttered a psalm. Dust fell down from the ceiling.
 
@@ -27,7 +27,7 @@ The door blew open and Bradshaw’s muttering turned into a trembling scream—
 
 A hand from the mass reached not to cover his mouth but to grab inside it. It was copper-tasting and slippery and inhumanly firm in its grasp. Bradshaw’s eyes snapped open.
 
-At times, it became the duty of the people of Broughton to ensure the cleanliness and holiness of the town. It was Bradshaw who oversaw the trial and, often, the execution of the unsavable sinner. Murderers, thieves, drunks, jezebels… Bradshaw, of course, did not handle the executions himself.
+At times, it became the duty of the people of Broughton to ensure the cleanliness and holiness of the town. It was Bradshaw who oversaw the trial, and then, often, executions of the unsavable sinner. Murderers, thieves, drunks, jezebels… Bradshaw, of course, did not handle the executions himself.
 
 The mass screeched. In the flurry of faces, Bradshaw thought he saw the face of young Goody Anderson, though he was sure she had passed last winter. It had grabbed his arm, slithered behind him. A mess of bird-boned limbs poking into his ribs and neck and back. There too was the face of Jonathan, Betty, Harlow, and Thomas. The youngest Smith, the oldest Miller. The children were smiling, they were singing. He couldn’t quite tell where one ended and the other began.
 
